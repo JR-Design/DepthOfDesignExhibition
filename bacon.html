@@ -12,7 +12,15 @@
     />
     <title>Depth of design | Matthew Bacon</title>
   </head>
-  <body>
+  <body onscroll="pageDepth()">
+    <div id="leftclose" onclick="myFunction()"></div>
+    <div id="leftnav">
+      <img src="./img/Gradshow_2021_Logo_RGB_Colour.svg" alt="" />
+      <span class="line"></span>
+      <span id="progressbar" class="line2">
+        <!-- <span id="progressBarNumber">01</span> -->
+      </span>
+    </div>
     <div id="sidenav">
       <nav>
         <div id="closeicon">
@@ -25,9 +33,10 @@
           </a>
         </div>
         <div class="navtext">
-          <a onclick="myFunction()" href="#">Home</a><br />
-          <a onclick="myFunction()" href="#section_2">About</a><br />
-          <a onclick="myFunction()" href="#rsvp">Register</a>
+          <a onclick="myFunction()" href="index.html">Home</a><br />
+          <a onclick="myFunction()" href="index.html#about">About</a><br />
+          <a onclick="myFunction()" href="students.html">Students</a><br />
+          <a onclick="myFunction()" href="projects.html">Projects</a>
         </div>
         <div id="line"></div>
         <div id="hashtag">
@@ -37,20 +46,30 @@
         </div>
         <div id="navsocial">
           <a href="https://www.facebook.com/cambriangraphicdesign"
-            ><img src="Images/facebookwhite.png" alt="Facebook"
+            ><img src="img/facebookwhite.png" alt="Facebook"
           /></a>
-          <a href=""><img src="Images/instagramwhite.png" alt="instagram" /></a>
+          <a href=""><img src="img/instagramwhite.png" alt="instagram" /></a>
         </div>
       </nav>
     </div>
+    <a onclick="myFunction()" class="navbar-toggle">
+      <i class="icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </i>
+    </a>
     <div id="landingstudent">
       <div id="landingbio">
         <h1>Matthew Bacon</h1>
         <p class="bodybig">Imaging Team</p>
         <div id="landingsocial">
-          <img src="/img/website.png" alt="" />
-          <img src="/img/email.png" alt="" />
-          <img src="/img/instagram.png" alt="" />
+          <a href="mailto:matthewbacon4@gmail.com"
+            ><span class="buttontext">E-Mail</span></a
+          >
+          <a href="https://www.instagram.com/matthewbacon4/"
+            ><span class="buttontext">Instagram</span></a
+          >
         </div>
 
         <p class="bodybig">
@@ -60,15 +79,17 @@
       </div>
     </div>
     <div class="wrapper">
-      <div class="grid3">
-        <div id="p1_1">
-          <a href="#p1"><img src="/img/Bacon/p1/P1_1.png" alt="" /></a>
-        </div>
-        <div id="p1_1">
-          <a href="#p2"><img src="/img/Bacon/p2/P1_2.png" alt="" /></a>
-        </div>
-        <div id="p1_1">
-          <a href="#p3"><img src="/img/Bacon/p3/P1_3.png" alt="" /></a>
+      <div id="showcase">
+        <div class="grid3">
+          <div id="p1_1">
+            <a href="#p1"><img src="/img/Bacon/p1/P1_1.png" alt="" /></a>
+          </div>
+          <div id="p1_1">
+            <a href="#p2"><img src="/img/Bacon/p2/P1_2.png" alt="" /></a>
+          </div>
+          <div id="p1_1">
+            <a href="#p3"><img src="/img/Bacon/p3/P1_3.png" alt="" /></a>
+          </div>
         </div>
       </div>
     </div>
@@ -190,5 +211,7 @@
         </div>
       </div>
     </div>
+    <script src="./Scripts/sidenav.js"></script>
+    <script src="./Scripts/main.js"></script>
   </body>
 </html>
