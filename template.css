@@ -30,9 +30,10 @@
   width: 100%;
 }
 #p1_1 {
-  width: 30vw;
-  height: 30vh;
-  margin: 0 auto;
+  background-color: aqua;
+  width: 366px;
+  height: 366px;
+  margin: 25px 0px;
 }
 #p1_1 img {
   max-width: 100%;
