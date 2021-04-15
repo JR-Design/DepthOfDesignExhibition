@@ -1,5 +1,10 @@
 @import url(/template.css);
 @import url(/Textstyles.css);
+@import url(/Color.css);
+@import url(/nav.css);
+@import url(/StyleSheet.css);
+@import url(/footer.css);
+
 html {
   scroll-behavior: smooth;
 }
