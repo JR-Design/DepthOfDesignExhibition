@@ -1,0 +1,5 @@
+@import url(/template.css);
+@import url(/Textstyles.css);
+html {
+  scroll-behavior: smooth;
+}

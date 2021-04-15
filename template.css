@@ -12,6 +12,10 @@
   height: 366px;
   margin: 25px 0px;
 }
+#p1_1 img {
+  max-width: 100%;
+  max-height: 100%;
+}
 .grid3 {
   place-items: center;
   display: grid;
@@ -23,10 +27,25 @@
   grid-template-columns: auto auto;
 }
 #w1_fullwidth_1 {
-  width: 100vw;
-  height: 50vh;
+  max-height: 100vh;
   background-color: aqua;
   margin: 25px 0px;
+  text-align: center;
+  overflow: hidden;
+  align-items: center;
+}
+#w1_fullwidth_1 img {
+  width: 100%;
+}
+#w1_fullwidth_2 {
+  width: 100%;
+  background-color: aqua;
+  margin: 25px 0px;
+  text-align: center;
+}
+#w1_fullwidth_2 img {
+  max-height: 100%;
+  max-width: 100%;
 }
 #header_1 {
   width: 100%;
@@ -40,17 +59,29 @@
   background-color: aqua;
   margin: 25px 0px;
 }
+#s1_halfwidth img {
+  max-width: 100%;
+  max-height: 100%;
+}
 #s2_halfwidth {
   width: 580px;
   height: 440px;
   background-color: aqua;
   margin: 25px 0px;
 }
+#s2_halfwidth img {
+  max-width: 100%;
+  max-height: 100%;
+}
 #s3_halfwidth {
   width: 580px;
   height: 580px;
   background-color: aqua;
   margin: 25px 0px;
+}
+#s3_halfwidth img {
+  max-width: 100%;
+  max-height: 100%;
 }
 #s4_halfwidth {
   width: 580px;
@@ -88,4 +119,17 @@
 }
 #blurb span.body {
   font-weight: 300;
+}
+.seperator {
+  width: 80vw;
+  max-width: 1440px;
+  height: 1px;
+  background-color: black;
+}
+.projecttitle {
+  width: 40%;
+  margin-top: 50px;
+}
+.projecttitle p.body {
+  margin-top: 20px;
 }
