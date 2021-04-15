@@ -6,16 +6,6 @@
   max-width: 1440px;
   margin: 0 auto;
 }
-#landingstudent {
-  width: 100vw;
-  min-height: 80vh;
-  max-height: 100vh;
-  background-position: right;
-  background-color: aqua;
-  background-image: url("/img/Bacon/landing/portrait.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 #landingbio {
   width: 30vw;
   margin-left: 170px;
