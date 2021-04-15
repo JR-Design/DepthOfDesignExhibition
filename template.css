@@ -30,9 +30,8 @@
   width: 100%;
 }
 #p1_1 {
-  background-color: aqua;
-  width: 366px;
-  height: 366px;
+  width: 20vw;
+  height: 20vh;
   margin: 25px 0px;
 }
 #p1_1 img {
