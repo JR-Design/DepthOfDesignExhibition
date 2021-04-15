@@ -1,0 +1,13 @@
+/* Colors */
+
+/* 
+EXAMPLE OF HOW TO USE ROOT COLORS:
+background-color: var(--blue); 
+*/
+
+:root {
+    --primary: #495BFD;
+    --secondary: #252529; 
+    --light_grey: #F6F6F6;
+    --white: #FFFFFF;
+}
