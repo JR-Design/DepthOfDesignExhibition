@@ -1,5 +1,5 @@
 .navtext {
-  font-family: "Gotham", sans-serif;
+  font-family: Gothammedium, sans-serif;
   font-style: normal;
   font-weight: medium;
   font-size: 2em;
@@ -24,6 +24,7 @@ nav {
   text-align: right;
   margin-bottom: -72px;
   padding-right: 85px;
+  z-index: 10;
 }
 #leftnav {
   position: fixed;
