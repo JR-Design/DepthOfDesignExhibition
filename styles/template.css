@@ -172,3 +172,52 @@
 .projecttitle p.body {
   margin-top: 20px;
 }
+.container {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary);
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10000;
+  padding-top: 40vh;
+}
+.container h1 {
+  color: #fff;
+}
+#cdtitle {
+  color: #fff;
+  font-family: Noctis;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  /* or 64px */
+  letter-spacing: -1px;
+  transition: 1s;
+}
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  font-family: gotham;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+  font-family: gotham;
+}
+#section5 {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  display: block;
+  transition: 1s;
+}
