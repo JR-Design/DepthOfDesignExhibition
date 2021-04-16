@@ -48,12 +48,14 @@
   place-items: center;
   display: grid;
   grid-template-columns: auto auto auto;
+  margin: 0px 30px;
 }
 .grid2 {
   display: grid;
   place-items: center;
   grid-template-columns: auto auto;
   grid-gap: 20px;
+  margin: 0px 90px;
 }
 #w1_fullwidth_1 {
   max-height: 100vh;
@@ -141,6 +143,7 @@
 #blurb {
   margin: 0 auto;
   width: 80%;
+  text-align: left;
 }
 #blurb span.bodybig {
   font-weight: bold;
@@ -157,6 +160,7 @@
 .projecttitle {
   width: 40%;
   margin-top: 50px;
+  margin: 50px 90px 0px;
 }
 .projecttitle p.body {
   margin-top: 20px;

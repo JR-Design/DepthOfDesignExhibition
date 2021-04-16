@@ -1,0 +1,123 @@
+.navtext {
+  font-family: Gothammedium, sans-serif;
+  font-style: normal;
+  font-weight: medium;
+  font-size: 2em;
+  line-height: 72px;
+  letter-spacing: 0.164102px;
+  text-transform: uppercase;
+  color: #252529;
+  margin-left: 80px;
+  margin-top: 30vh;
+  transition: 0.2s;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:hover .navtext {
+  color: var(--primary);
+  transition: 0.2s;
+}
+nav {
+  position: sticky;
+  top: 0;
+  text-align: right;
+  margin-bottom: -72px;
+  padding-right: 85px;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+#leftnav {
+  position: fixed;
+  height: 100vh;
+  width: 60px;
+  left: 1vw;
+  z-index: 100;
+}
+
+#leftnav img {
+  margin-top: 5vh;
+  margin-left: -0.1vw;
+  max-width: 60px;
+  width: 10vw;
+  min-width: 30px;
+}
+
+#leftnav .line {
+  position: absolute;
+  left: 1.5vw;
+  top: 30vh;
+  width: 2px;
+  height: 60vh;
+  border-radius: 2px;
+  background: #495bfd20;
+}
+
+#leftnav .line::before {
+  content: "01";
+  font-size: 17px;
+  font-family: gotham;
+  font-weight: regular;
+  position: relative;
+  top: -33px;
+  left: -7px;
+  color: var(--primary);
+}
+
+#leftnav .line::after {
+  content: "04";
+  font-size: 17px;
+  font-family: gotham;
+  font-weight: regular;
+  position: relative;
+  top: 61vh;
+  left: -27px;
+  color: var(--primary);
+}
+
+#leftnav .line2 {
+  position: absolute;
+  left: 1.5vw;
+  margin-top: 30vh;
+  margin-bottom: 20vh;
+  width: 2px;
+  height: 10vh;
+  border-radius: 2px;
+  background: var(--primary);
+}
+
+/*
+#progressbar::after {
+  content: '03';
+font-family: gotham;
+margin-left: 0.6vw;
+top: 4vh;
+position: absolute;
+
+color: var(--primary);
+}
+*/
+
+#progressBarNumber {
+  position: absolute;
+  /* margin-top: 4vh; */
+  height: 10vh;
+  font-family: gotham;
+  margin-left: 0.6vw;
+  top: 4.3vh;
+  position: absolute;
+  /* padding: 10px; */
+  color: var(--primary);
+}
+/* Tablet */
+@media only screen and (max-width: 1023px) {
+  .navtext {
+    margin-left: 50px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 560px) {
+  .navtext {
+    margin-left: 12px;
+  }
+}

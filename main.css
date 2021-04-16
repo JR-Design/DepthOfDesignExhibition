@@ -1,9 +1,9 @@
 @import url(/styles/Textstyles.css);
-@import url(/template.css);
-@import url(/Color.css);
-@import url(/nav.css);
-@import url(/StyleSheet.css);
-@import url(/footer.css);
+@import url(/styles/template.css);
+@import url(/styles/Color.css);
+@import url(/styles/nav.css);
+@import url(/styles/StyleSheet.css);
+@import url(/styles/footer.css);
 
 html {
   scroll-behavior: smooth;
