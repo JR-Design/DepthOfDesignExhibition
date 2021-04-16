@@ -4,38 +4,95 @@ footer {
   height: 35vh;
   text-align: center;
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   place-items: center;
   align-items: center;
+  text-transform: uppercase;
 }
-
+#presented {
+  grid-column: 1;
+  text-align: left;
+}
+#presented .bodysmall {
+  grid-row: 1;
+  margin-bottom: 25px;
+}
+#presented img {
+  grid-row: 2;
+  margin-right: 80px;
+}
+#supported {
+  grid-column: 2;
+  text-align: left;
+}
+#supported .bodysmall {
+  grid-row: 1;
+  margin-bottom: 25px;
+}
+#supported img {
+  grid-row: 2;
+  margin-right: 80px;
+}
+#findus {
+  text-align: left;
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px 0px;
+}
+#findus div.bodysmall {
+  grid-row: 1;
+  grid-column: 1;
+}
+#findus a#fb {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  grid-gap: 0px 10px;
+}
+#findus a#fb span {
+  grid-column: 2;
+  grid-row: 1/2;
+}
+#findus a#fb img {
+  grid-column: 1;
+  grid-row: 1/2;
+}
+#findus a#ig {
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  grid-gap: 0px 10px;
+}
+#findus a#ig span {
+  grid-column: 2;
+  grid-row: 1/2;
+}
+#findus a {
+  text-decoration: none;
+  color: var(--primary);
+}
+#findus a:hover span.bodysmall {
+  color: var(--primary);
+}
+#findus a#ig img {
+  grid-column: 1;
+  grid-row: 1/2;
+}
+#footernav a {
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+#footernav a:hover .buttontext {
+  color: var(--primary);
+}
 footer img {
-  position: relative;
-  /* top: 50%; */
-  margin: 0 3vw;
-  /* filter: saturate(100%); */
-  /* transform: translate(-50%, -50%); */
-  max-height: 10vh;
-  /* filter: invert(100%); */
   max-width: 130px;
   max-height: 70px;
-}
-
-footer div {
-  margin: 0 auto;
-  min-width: 300px;
-  /* height: 65vh; */
-  max-width: 300px;
-  display: grid;
-  grid-auto-flow: column;
-  grid-row: auto auto auto;
-  justify-content: center;
-  place-items: center;
-}
-
-footer a:nth-child(2) img {
-  /* filter: invert(0); */
 }
 /* Tablet */
 @media all and (max-width: 1023px) {
@@ -48,7 +105,6 @@ footer a:nth-child(2) img {
     grid-row: auto auto auto;
     place-items: center;
   }
-
 
   footer div {
     margin: 0 auto;

@@ -7,8 +7,8 @@
   margin: 0 auto;
 }
 #landingbio {
-  width: 35vw;
-  margin-left: 170px;
+  width: 40%;
+  margin-left: max(80px, 6%);
   padding-top: 20vh;
 }
 
@@ -29,17 +29,18 @@
   backdrop-filter: blur(10px);
   width: 100%;
 }
-#p1_1 {
-  background-color: #4355f8;
-  width: 30rem;
+.p1_1 {
   height: 30rem;
-  margin: 25px 0px;
+  margin: 25px 10px;
 }
-#p1_1 img {
+.p1_1 img {
+  object-fit: contain;
+  width: 100%;
   max-height: 100%;
   transition: transform 0.2s;
 }
-#p1_1 a:hover img {
+
+.p1_1 a:hover img {
   transform: translatey(-10px) scale(1.05);
   transition: transform 0.2s;
 }
@@ -52,10 +53,11 @@
   display: grid;
   place-items: center;
   grid-template-columns: auto auto;
+  grid-gap: 20px;
 }
 #w1_fullwidth_1 {
   max-height: 100vh;
-  background-color: #4355f8;
+
   margin: 25px 0px;
   text-align: center;
   overflow: hidden;
@@ -65,7 +67,7 @@
 }
 #w1_fullwidth_2 {
   width: 100%;
-  background-color: #4355f8;
+
   margin: 25px 0px;
   text-align: center;
 }
@@ -76,59 +78,59 @@
 #header_1 {
   width: 100%;
   height: 50vh;
-  background-color: #4355f8;
+
   margin: 25px 0px;
 }
 #s1_halfwidth {
-  width: 580px;
-  height: 350px;
-  background-color: #4355f8;
   margin: 25px 0px;
 }
 #s1_halfwidth img {
-  max-width: 100%;
   max-height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 #s2_halfwidth {
-  width: 580px;
-  height: 440px;
-  background-color: #4355f8;
   margin: 25px 0px;
 }
 #s2_halfwidth img {
-  max-width: 100%;
   max-height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 #s3_halfwidth {
-  width: 580px;
-  height: 580px;
-  background-color: #4355f8;
   margin: 25px 0px;
 }
 #s3_halfwidth img {
-  max-width: 100%;
   max-height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 #s4_halfwidth {
-  width: 580px;
-  height: 725px;
-  background-color: #4355f8;
   margin: 25px 0px;
+}
+#s4_halfwidth img {
+  max-height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 #s1_thirdwidth {
-  width: 367px;
-  height: 367px;
-  background-color: #4355f8;
   margin: 25px 0px;
+}
+#s1_thirdwidth img {
+  max-height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 #s2_thirdwidth {
-  width: 367px;
-  height: 503px;
-  background-color: #4355f8;
   margin: 25px 0px;
 }
+#s2_thirdwidth img {
+  max-height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
 #s1_halfwidthtext {
-  width: 536px;
+  width: 40%;
 }
 #s1_halfwidthtext span.bodybig {
   font-weight: bold;
