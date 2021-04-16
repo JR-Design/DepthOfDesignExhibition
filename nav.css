@@ -1,29 +1,29 @@
 .navtext {
-  font-family: Gotham;
+  font-family: "Gotham", sans-serif;
   font-style: normal;
-  font-weight: 325;
-  font-size: 36px;
+  font-weight: light;
+  font-size: 2em;
   line-height: 72px;
   letter-spacing: 0.164102px;
   text-transform: uppercase;
   color: #252529;
-  margin-left: 110px;
+  margin-left: 80px;
   margin-top: 30vh;
+  transition: 0.2s;
 }
 nav a {
-  text-decoration-color: #252529;
-}
-nav a:hover {
-  text-decoration-color: var(--primary);
+  text-decoration: none;
 }
 nav a:hover .navtext {
   color: var(--primary);
+  transition: 0.2s;
 }
 nav {
-  backdrop-filter: blur(50px);
-  width: 100vw;
-  text-align: right;
   position: sticky;
+  top: 0;
+  text-align: right;
+  margin-bottom: -72px;
+  padding-right: 85px;
 }
 #leftnav {
   position: fixed;

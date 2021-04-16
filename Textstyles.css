@@ -9,32 +9,27 @@ html {
 /* Fonts Collection */
 @font-face {
   font-family: Noctis;
-  src: url("../Fonts/Noctis-Heavy-trial.ttf") format("woff2");
+  src: url("./Fonts/Noctis-Heavy-trial.ttf") format("woff2");
 }
 @font-face {
   font-family: Gotham;
-  src: url("../Fonts/Gotham-Bold.otf") format("otf");
+  src: url("./Fonts/Gotham-Bold.otf") format("otf");
   font-weight: bold;
 }
 @font-face {
   font-family: Gotham;
-  src: url("../Fonts/Gotham-Book.otf");
+  src: url("./Fonts/Gotham-Book.otf");
   font-weight: book;
 }
 @font-face {
   font-family: Gotham;
-  src: url("../Fonts/Gotham-Medium.otf");
+  src: url("./Fonts/Gotham-Medium.otf");
   font-weight: medium;
 }
 @font-face {
   font-family: Gotham;
-  src: url("../Fonts/Gotham-Light.otf");
+  src: url("./Fonts/Gotham-Light.otf");
   font-weight: light;
-}
-@font-face {
-  font-family: Gotham;
-  src: url("../Fonts/Gotham-Bold.otf");
-  font-weight: bold;
 }
 
 h1 {
@@ -49,7 +44,7 @@ h1 {
   color: #000000;
 }
 h2 {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -60,7 +55,7 @@ h2 {
   color: #000000;
 }
 h3 {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -70,7 +65,7 @@ h3 {
   color: #000000;
 }
 h4 {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
@@ -81,7 +76,7 @@ h4 {
   color: #000000;
 }
 .bigsubtitle {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -92,7 +87,7 @@ h4 {
   color: #000000;
 }
 .buttontext {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: medium;
   font-weight: 600;
   font-size: 14px;
@@ -102,7 +97,7 @@ h4 {
   color: #000000;
 }
 .overline {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -113,7 +108,7 @@ h4 {
   color: #000000;
 }
 .bodybig {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -122,7 +117,7 @@ h4 {
   color: #000000;
 }
 .body {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -132,7 +127,7 @@ h4 {
   color: #000000;
 }
 .bodybold {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -142,7 +137,7 @@ h4 {
   color: #000000;
 }
 .bodysmall {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -152,7 +147,7 @@ h4 {
   color: #000000;
 }
 .bodysmallbold {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
