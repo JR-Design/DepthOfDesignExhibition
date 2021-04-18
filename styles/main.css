@@ -8,3 +8,10 @@
 html {
   scroll-behavior: smooth;
 }
+a div#skip {
+  text-align: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--primary);
+  color: #fff;
+}
