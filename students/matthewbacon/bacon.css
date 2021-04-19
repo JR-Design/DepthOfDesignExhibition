@@ -8,3 +8,12 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* Tablet */
+@media only screen and (max-width: 1023px) {
+  #landingstudent {
+    background-position: center;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 560px) {
+}
