@@ -231,6 +231,12 @@ li span {
   .grid2 {
     display: block;
   }
+  #footernav .grid2 {
+    display: grid;
+  }
+  #showcase .grid3 {
+    display: grid;
+  }
   .grid3 {
     display: block;
   }
@@ -240,9 +246,6 @@ li span {
   }
   .projecttitle {
     margin: 50px 90px 80px;
-  }
-  #showcase {
-    display: none;
   }
 }
 /* Mobile */
