@@ -251,6 +251,6 @@ li span {
 /* Mobile */
 @media only screen and (max-width: 560px) {
   #landingbio {
-    margin-left: max(40px, 2%);
+    margin-left: max(20px, 2%);
   }
 }
