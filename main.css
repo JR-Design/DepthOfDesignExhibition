@@ -7,14 +7,12 @@
 @import url(/styles/footer.css);
 */
 
-@import "Textstyles.css";
-@import "Color.css";
+@import "/styles/Textstyles.css";
+@import "/styles/Color.css";
 @import "template.css";
-@import "StyleSheet.css";
-@import "nav.css";
-@import "footer.css";
-
-
+@import "/styles/StyleSheet.css";
+@import "/styles/nav.css";
+@import "/styles/footer.css";
 
 html {
   scroll-behavior: smooth;

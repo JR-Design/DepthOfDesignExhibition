@@ -148,6 +148,10 @@
 #s1_halfwidthtext span.body {
   font-weight: 300;
 }
+#s1_halfwidthtext video {
+  max-height: 100%;
+  max-width: 100%;
+}
 #blurb {
   margin: 0 auto;
   width: 80%;
