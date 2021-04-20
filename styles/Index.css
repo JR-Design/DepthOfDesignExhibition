@@ -225,7 +225,7 @@ body {
 }
 
 .student_info p {
-  margin-top: 12px;
+  margin-top: 4px;
 }
 
 /*-- PROJECT SECTION 4 --*/
@@ -438,7 +438,7 @@ body {
   }
 
   .section4_2 {
-    margin-top: 64px;
+    margin-top: 34px;
     display: grid;
     grid-template-columns: auto auto;
   }
@@ -450,7 +450,7 @@ body {
   }
 
   .section4_3 {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
