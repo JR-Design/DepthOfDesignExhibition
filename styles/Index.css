@@ -11,16 +11,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 350px;
-    -webkit-background-size: contain;
-    z-index: -1;
 }
-@media screen and (max-device-width: 1024px){
-    #section1 {
-        
-    }
-}
+
 #section1 div {
-    height: 50vh;
+    height: 35vh;
     width: 100vw;
     background-color: #ffffff50;
     backdrop-filter: blur(12px);
