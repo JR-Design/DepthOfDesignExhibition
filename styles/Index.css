@@ -363,7 +363,7 @@ body {
         display: grid;
         align-content: flex-end;
         background-image: url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg"), url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg"), url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg") ;
-        background-attachment: initial, initial, initial;
+        background-attachment: initial;
         background-position: calc(50% - 20px), center, calc(50% + 20px);
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-size: 280px;
