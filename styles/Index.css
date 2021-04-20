@@ -338,6 +338,21 @@ body {
 /* Tablet */
 @media only screen and (max-width: 1023px) {
 
+    /*
+    #section1 {
+        background-image: url("../img/Gradshow_2021_Logo_RGB_Colour.svg") ;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 280px;
+
+        background-attachment:initial;
+        animation: splash_mobile 800ms 200ms 1;
+    }
+    #section1 div {
+        height: 50vh;
+    }
+    */
 
     #section1 {
 
@@ -347,7 +362,7 @@ body {
         display: grid;
         align-content: flex-end;
         background-image: url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg"), url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg"), url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg") ;
-        background-attachment: initial, initial, initial;
+        background-attachment: fixed, fixed, initial;
         background-position: calc(50% - 20px), center, calc(50% + 20px);
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-size: 280px;
@@ -358,7 +373,7 @@ body {
     
     
     #section1 div {
-        height: 32.5vh;
+        height: 50vh;
         width: 100vw;
         background-color: #ffffff50;
         backdrop-filter: blur(12px);
