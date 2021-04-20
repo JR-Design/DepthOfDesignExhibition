@@ -2,29 +2,66 @@ body {
     min-height: 100%;
 }
 
+
+@keyframes splash {
+    0%{ opacity: 0;
+        background-position: bottom, bottom, bottom;
+    }
+    40% {
+        opacity: 30%;
+        background-position: center, center, center;
+    }
+	41% {
+        opacity: 60%;
+        background-position-x: 50%, 50%, 50%;
+    }
+    100% {
+        opacity: 100%;
+        background-position-x: 48%, 50%, 52%
+    }
+}
+@keyframes splash_mobile {
+    from {background-position: bottom;}
+    to {background-position: center;}
+}
+
 #section1 {
     height: 100vh;
     display: grid;
     align-content: flex-end;
-    background-image: url("../img/Gradshow_2021_Logo_RGB_Colour.svg");
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg"), url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg"), url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg") ;
+    background-attachment: fixed, fixed, fixed;
+    background-position: center, center, center;
+    background-position-x: 48%, 50%, 52%;
     background-repeat: no-repeat;
-    background-size: 350px;
+    background-size: 20%;
+    
+    animation: splash 1300ms 0ms 1;
 }
-@media screen and (max-device-width: 1024px){
-    #section1 {
-        background-attachment:initial;
-    }
-}
+
+
 #section1 div {
-    height: 35vh;
+    height: 32.5vh;
     width: 100vw;
     background-color: #ffffff50;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
+@media screen and (max-device-width: 1024px){
+    #section1 {
+        background-image: url("../img/Gradshow_2021_Logo_RGB_Colour.svg") ;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 280px;
 
+        background-attachment:initial;
+        animation: splash_mobile 800ms 200ms 1;
+    }
+    #section1 div {
+        height: 50vh;
+    }
+}
 
 /*-- ABOUT SECTION --*/
 #section2 {
@@ -208,6 +245,77 @@ body {
 #section5 {
     height: 100vh;
 }
+
+.section4_1 {grid-area: section4_1;}
+.section4_2 {grid-area: section4_2;}
+.section4_3 {grid-area: section4_3;}
+.section4_4 {grid-area: section4_4;}
+
+#section4 section  {
+    width: 82.5vw;
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas:
+        'section4_1 section4_1'
+        'section4_2 section4_3'
+        'section4_4 section4_4';
+    grid-gap: 10px;
+}
+
+.section5_1 {grid-area: section5_1;}
+.section5_2 {grid-area: section5_2;}
+.section5_3 {grid-area: section5_3;}
+.section5_4 {grid-area: section5_4;}
+
+#section5 > section {
+    width: 82.5vw;
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas:
+    'section5_1 section5_1'
+    'section5_2 section5_2'
+    'section5_3 section5_3'
+    'section5_4 section5_4';
+
+    grid-gap: 10px;
+}
+
+.section5_1 {
+    margin-top: 140px;
+}
+.section5_1 h1 {
+    font-size: 48px
+}
+
+.section5_2 {
+    display: grid;
+    margin-top: 25px;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+}
+.section5_2_1 {
+    margin-bottom: 25px;
+}
+
+.section5_2 article p,
+.section5_2 article h4 {
+    color: var(--primary)
+}
+
+.section5_3 {
+    display: grid;
+    margin-top: 50px;
+    /*grid-template-columns: 20.5vw 20.5vw 20.5vw 20.5vw;*/
+    /*grid-auto-columns: minmax(20.5vw, 200px);*/
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+}
+.section5_3 article {
+    margin-bottom: 50px;
+}
+
+.section5_4 {
+    margin-top: 50px;
+}
+
 
 
 

@@ -43,7 +43,6 @@ html {
   src:  url("../Fonts/GothamMedium.otf") format("otf"), 
       url('../Fonts/Gotham-Medium.woff2') format('woff2'),
       url('../Fonts/Gotham-Medium.woff') format('woff');
-  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -149,8 +148,6 @@ h4 {
 }
 .buttontext {
   font-family: Gothammedium, sans-serif;
-  font-style: medium;
-  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
@@ -159,8 +156,7 @@ h4 {
 }
 .overline {
   font-family: Gothammedium, sans-serif;
-  font-style: normal;
-  font-weight: 500;
+
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 5px;
@@ -190,7 +186,7 @@ h4 {
 .bodybold {
   font-family: Gothambold, sans-serif;
   font-style: normal;
-  font-weight: bold;
+
   font-size: 16px;
   line-height: 150%;
   /* or 24px */
