@@ -58,7 +58,7 @@ body {
 
 #section1 {
 
-    animation: splash ease-out 1300ms 350ms 1;
+    animation: splash ease-out 1300ms 0ms 1;
 
     height: 100vh;
     display: grid;
@@ -153,6 +153,7 @@ body {
 #section2 section .section2_1 h3 {
   color: white;
   font-family: "Gothamlight";
+  font-size: max(min(24px), 1.25vw);
 }
 #section2 section .section2_1 h3:nth-child(2) {
   font-family: "Gothammedium";
@@ -175,8 +176,10 @@ body {
 }
 
 .section2_3 p {
-  max-width: 550px;
-  color: white;
+    color: white;
+    max-width: calc(550px + 10vw);
+    font-size: max(min(18px), 1vw);
+    line-height: 150%;
 }
 
 /*-- STUDENT SECTION --*/
@@ -190,16 +193,18 @@ body {
 }
 .section3_students > h1,
 .section3_students > p {
-  max-width: 570px;
+  max-width: calc(570px + 10vw);
   margin: 0% 1.25vw;
 }
 .section3_students > h1 {
   margin-top: 200px;
+  font-size: max(min(48px), 3vw, 40px);
 }
 
 .section3_students > p {
   margin-top: 12px;
   margin-bottom: 75px;
+  font-size: max(min(18px), 1vw);
 }
 
 .section3_students > div {
@@ -276,7 +281,7 @@ body {
 .section4_2 {
   margin-top: 64px;
   display: grid;
-  grid-template-columns: 222px 222px;
+  grid-template-columns: auto auto;
 }
 .section4_2 ul {
   /* grid-column: inline-block; */
@@ -286,8 +291,10 @@ body {
   color: black;
   font-family: "Gothambook", sans-serif;
   text-transform: initial;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: max(min(18px), 1vw);
   padding: 0.75em;
+  width: 100%;
 }
 .section4_3 {
   width: 30vw;
@@ -305,15 +312,15 @@ body {
   padding: 0.75em;
 }
 
-#section5 {
-  height: 100vh;
-}
 
 .section4_1 {grid-area: section4_1;}
 .section4_2 {grid-area: section4_2;}
 .section4_3 {grid-area: section4_3;}
 .section4_4 {grid-area: section4_4;}
 
+.section4_1 h1 {
+    font-size: max(min(48px), 4vw);
+}
 #section4 section  {
     width: 82.5vw;
     display: grid;
@@ -346,9 +353,7 @@ body {
 .section5_1 {
     margin-top: 140px;
 }
-.section5_1 h1 {
-    font-size: 48px
-}
+.section5_1 h1 {font-size: max(min(48px), 4vw);}
 
 .section5_2 {
     display: grid;
@@ -361,7 +366,17 @@ body {
 
 .section5_2 article p,
 .section5_2 article h4 {
-    color: var(--primary)
+    color: var(--primary);
+    
+}
+
+.section5_2 article p,
+.section5_3 article p {
+    font-size: max(min(18px), 1vw);
+}
+.section5_2 article h4,
+.section5_3 article h4 {
+    font-size: max(min(21px), 1.25vw);
 }
 
 .section5_3 {
@@ -375,8 +390,10 @@ body {
     margin-bottom: 50px;
 }
 
+
 .section5_4 {
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 
