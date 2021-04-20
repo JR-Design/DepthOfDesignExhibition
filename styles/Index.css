@@ -12,7 +12,11 @@ body {
     background-repeat: no-repeat;
     background-size: 350px;
 }
-
+@media screen and (max-device-width: 1024px){
+    #section1 {
+        background-attachment:initial;
+    }
+}
 #section1 div {
     height: 35vh;
     width: 100vw;
