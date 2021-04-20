@@ -10,7 +10,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: minmax(200px, 42.5vw);
+    background-size: 350px;
 }
 #section1 div {
     height: 50vh;
