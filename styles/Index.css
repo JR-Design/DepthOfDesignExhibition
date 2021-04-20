@@ -14,7 +14,7 @@ body {
 }
 @media screen and (max-device-width: 1024px){
     #section1 {
-        background-position: initial;
+        background-position: scroll;
     }
 }
 #section1 div {
