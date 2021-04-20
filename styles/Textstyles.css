@@ -200,10 +200,9 @@ h4 {
 .bodybold_med {
   font-family: Gothammedium, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 16px;
   line-height: 150%;
-
   color: #000000;
 }
 .bodysmall {
