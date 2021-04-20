@@ -2,9 +2,9 @@
   font-family: Gothammedium, sans-serif;
   font-style: normal;
   font-weight: medium;
-  font-size: 2em;
+  font-size: 1.5rem;
   line-height: 72px;
-  letter-spacing: 0.164102px;
+  letter-spacing: 0.154102REM;
   text-transform: uppercase;
   color: #252529;
   margin-left: 80px;
@@ -23,8 +23,9 @@ nav {
   top: 0;
   text-align: right;
   margin-bottom: -72px;
-  padding-right: 85px;
+  padding-right: 50px;
   z-index: 10;
+  background-color: #ffffff77;
   backdrop-filter: blur(5px);
 }
 #leftnav {
@@ -32,11 +33,11 @@ nav {
   height: 100vh;
   width: 60px;
   left: 1vw;
-  z-index: 100;
+  z-index: 1000;
 }
 
 #leftnav img {
-  margin-top: 5vh;
+  margin-top: 21px;
   margin-left: -0.1vw;
   max-width: 60px;
   width: 10vw;
@@ -51,10 +52,11 @@ nav {
   height: 60vh;
   border-radius: 2px;
   background: #495bfd20;
+  filter: drop-shadow(-2px 0 0 white);
 }
 
 #leftnav .line::before {
-  content: "01";
+  content: "";
   font-size: 17px;
   font-family: gotham;
   font-weight: regular;
@@ -65,7 +67,7 @@ nav {
 }
 
 #leftnav .line::after {
-  content: "04";
+  content: "";
   font-size: 17px;
   font-family: gotham;
   font-weight: regular;
@@ -84,6 +86,7 @@ nav {
   height: 10vh;
   border-radius: 2px;
   background: var(--primary);
+  filter: drop-shadow(-2px 0 0 white);
 }
 
 /*
@@ -112,12 +115,20 @@ color: var(--primary);
 /* Tablet */
 @media only screen and (max-width: 1023px) {
   .navtext {
-    margin-left: 50px;
+    margin-left: 30px;
+  }
+  nav {
+    padding-right: 42.5px;
   }
 }
 /* Mobile */
 @media only screen and (max-width: 560px) {
   .navtext {
-    margin-left: 12px;
+    margin-left: 16.25px;
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+  nav {
+    padding-right: 21.25px;
   }
 }

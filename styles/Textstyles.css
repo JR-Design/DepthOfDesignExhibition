@@ -6,7 +6,10 @@ html {
   font-size: 62.5%;
 }
 
-/* Fonts Collection 
+/* Fonts Collection */
+
+
+/* OLD WAY THAT WASNT WORKING
 @font-face {
   font-family: "Noctis";
   src: url("../Fonts/Noctis-Heavy-trial.ttf") format("woff2");
@@ -34,11 +37,12 @@ html {
 */
 
 
-
+/* NEW WAY THAT SEEMS TO BE WORKING */
 @font-face {
   font-family: 'Gothammedium';
-  src: url('/Fonts/Gotham-Medium.woff2') format('woff2'),
-      url('/Fonts/Gotham-Medium.woff') format('woff');
+  src:  url("../Fonts/GothamMedium.otf") format("otf"), 
+      url('../Fonts/Gotham-Medium.woff2') format('woff2'),
+      url('../Fonts/Gotham-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -46,8 +50,9 @@ html {
 
 @font-face {
   font-family: 'Gothamlight';
-  src: url('/Fonts/Gotham-Light.woff2') format('woff2'),
-      url('/Fonts/Gotham-Light.woff') format('woff');
+  src: url("../Fonts/GothamLight.otf") format("otf"), 
+      url('../Fonts/Gotham-Light.woff2') format('woff2'),
+      url('../Fonts/Gotham-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -55,8 +60,9 @@ html {
 
 @font-face {
   font-family: 'Gothambook';
-  src: url('/Fonts/Gotham-Book.woff2') format('woff2'),
-      url('/Fonts/Gotham-Book.woff') format('woff');
+  src: url("../Fonts/GothamBook.otf") format("otf"),
+      url('../Fonts/Gotham-Book.woff2') format('woff2'),
+      url('../Fonts/Gotham-Book.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -64,8 +70,9 @@ html {
 
 @font-face {
   font-family: 'Gothambold';
-  src: url('/Fonts/Gotham-Bold.woff2') format('woff2'),
-      url('/Fonts/Gotham-Bold.woff') format('woff');
+  src: url("../Fonts/GothamBold.otf") format("otf"),
+      url('../Fonts/Gotham-Bold.woff2') format('woff2'),
+      url('../Fonts/Gotham-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -73,8 +80,9 @@ html {
 
 @font-face {
   font-family: 'Noctis';
-  src: url('/Fonts/NoctisTrial-Heavy.woff2') format('woff2'),
-      url('/Fonts/NoctisTrial-Heavy.woff') format('woff');
+  src: url("../Fonts/Noctis-Heavy-trial.ttf") format("ttf"),
+      url('../Fonts/NoctisTrial-Heavy.woff2') format('woff2'),
+      url('../Fonts/NoctisTrial-Heavy.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -186,6 +194,15 @@ h4 {
   font-size: 16px;
   line-height: 150%;
   /* or 24px */
+
+  color: #000000;
+}
+.bodybold_med {
+  font-family: Gothammedium, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
 
   color: #000000;
 }
