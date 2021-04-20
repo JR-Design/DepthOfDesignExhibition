@@ -12,8 +12,8 @@
     height: 50vh;
     width: 100vw;
     background-color: #ffffff50;
-    backdrop-filter: blur(5px);
-    -webkit-filter: blur(5px);
+    backdrop-filter: blur(12px);
+    -webkit-filter: blur(12px);
 }
 
 
