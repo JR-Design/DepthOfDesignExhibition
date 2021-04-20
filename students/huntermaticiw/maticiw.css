@@ -4,7 +4,7 @@
   max-height: 100vh;
   background-position: right;
   background-color: aqua;
-  background-image: url("/students/huntermaticiw/portrait.png");
+  background-image: url("portrait.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

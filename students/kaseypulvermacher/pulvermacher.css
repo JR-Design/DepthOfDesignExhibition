@@ -4,7 +4,7 @@
   max-height: 100vh;
   background-position: right;
   background-color: aqua;
-  background-image: url("/students/kaseypulvermacher/portrait.jpg");
+  background-image: url("portrait.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }

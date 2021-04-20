@@ -7,8 +7,8 @@
 @import url(/styles/footer.css);
 */
 
-@import "Textstyles.css";
-@import "Color.css";
+@import "/styles/Textstyles.css";
+@import "/styles/Color.css";
 @import "template.css";
 @import "StyleSheet.css";
 @import "nav.css";
