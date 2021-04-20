@@ -176,10 +176,10 @@ body {
 }
 
 .section2_3 p {
-  max-width: calc(550px + 10vw);
-  color: white;
-  font-size: max(min(18px), 1vw);
-  line-height: 150%;
+    color: white;
+    max-width: calc(550px + 10vw);
+    font-size: max(min(18px), 1vw);
+    line-height: 150%;
 }
 
 /*-- STUDENT SECTION --*/
@@ -318,6 +318,9 @@ body {
 .section4_3 {grid-area: section4_3;}
 .section4_4 {grid-area: section4_4;}
 
+.section4_1 h1 {
+    font-size: max(min(48px), 4vw);
+}
 #section4 section  {
     width: 82.5vw;
     display: grid;
