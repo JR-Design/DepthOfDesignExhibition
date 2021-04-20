@@ -2,7 +2,7 @@ body {
   min-height: 100%;
 }
 
-
+/* OPTION ONE MELANIE DOESN'T LIKE
 @keyframes splash {
     0%{ opacity: 0;
         background-position: bottom, bottom, bottom;
@@ -20,12 +20,34 @@ body {
         background-position-x: 48%, 50%, 52%
     }
 }
+*/
+
+@keyframes splash {
+	0% {
+        opacity: 30%;
+        background-position-x: 50%, 50%, 50%;
+    }
+    100% {
+        opacity: 100%;
+        background-position-x: 48%, 50%, 52%
+    }
+}
+
 @keyframes splash_mobile {
-    from {background-position: bottom;}
-    to {background-position: center;}
+    from {
+        opacity: 30%;
+        background-position: calc(50% - 0px), center, calc(50% + 0px);
+    }
+    to {
+       opacity: 100%;
+       background-position: calc(50% - 20px), center, calc(50% + 20px);
+    }
 }
 
 #section1 {
+
+    animation: splash ease-out 1300ms 350ms 1;
+
     height: 100vh;
     display: grid;
     align-content: flex-end;
@@ -36,8 +58,9 @@ body {
     background-repeat: no-repeat;
     background-size: 20%;
     
-    animation: splash 1300ms 0ms 1;
 }
+
+
 
 
 #section1 div {
@@ -47,21 +70,7 @@ body {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
-@media screen and (max-device-width: 1024px){
-    #section1 {
-        background-image: url("../img/Gradshow_2021_Logo_RGB_Colour.svg") ;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 280px;
 
-        background-attachment:initial;
-        animation: splash_mobile 800ms 200ms 1;
-    }
-    #section1 div {
-        height: 50vh;
-    }
-}
 
 /*-- ABOUT SECTION --*/
 #section2 {
@@ -328,6 +337,33 @@ body {
 
 /* Tablet */
 @media only screen and (max-width: 1023px) {
+
+
+    #section1 {
+
+        animation: splash_mobile ease-out 1300ms 350ms 1;
+
+        height: 100vh;
+        display: grid;
+        align-content: flex-end;
+        background-image: url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg"), url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg"), url("../img/Gradshow_2021_Logo_RGB_Colour_single.svg") ;
+        background-attachment: initial, initial, initial;
+        background-position: calc(50% - 20px), center, calc(50% + 20px);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 280px;
+        
+    }
+    
+    
+    
+    
+    #section1 div {
+        height: 32.5vh;
+        width: 100vw;
+        background-color: #ffffff50;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
 }
 
 /* Tablet */
