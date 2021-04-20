@@ -143,12 +143,19 @@
   object-fit: contain;
   width: 100%;
 }
-#s1_halfwidthtext span.bodybig {
+#s1_halfwidthtext span.bodybig,
+#s1_halfwidthtext p.bodybig {
   font-weight: bold;
 }
-#s1_halfwidthtext span.body {
+#s1_halfwidthtext span.body,
+#s1_halfwidthtext p.body {
   font-weight: 300;
 }
+#s1_halfwidthtext span,
+#s1_halfwidthtext p {
+  padding-right: 30%;
+}
+
 #s1_halfwidthtext video {
   max-height: 100%;
   max-width: 100%;
@@ -167,16 +174,15 @@
 .seperator {
   width: 80vw;
   max-width: 1440px;
-  height: 1px;
+  height: 0.5px;
   background-color: black;
 }
 .projecttitle {
-  margin-top: 50px;
-  margin: 50px 90px 0px;
+  margin: 50px 0px 0px;
 }
 .projecttitle .body,
 .projecttitle .bigsubtitle {
-  width: 40%;
+  width: 50%;
 }
 .projecttitle p.body {
   margin-top: 20px;
