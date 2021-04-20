@@ -58,7 +58,7 @@ body {
 
 #section1 {
 
-    animation: splash ease-out 1300ms 350ms 1;
+    animation: splash ease-out 1300ms 0ms 1;
 
     height: 100vh;
     display: grid;
