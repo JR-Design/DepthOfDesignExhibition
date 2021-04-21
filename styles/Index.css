@@ -318,6 +318,11 @@ body {
   font-size: max(min(18px), 1vw);
   padding: 0.75em;
   width: 100%;
+  cursor: pointer;
+}
+.section4_2 ul li a {
+    color: black;
+    text-decoration: none;
 }
 .section4_3 {
   width: 30vw;

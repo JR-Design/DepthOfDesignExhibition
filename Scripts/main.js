@@ -85,9 +85,8 @@ let studentLink = 'easyAs123.abc/meAndYouGirl';
 let studentFirstName = studentName.split(' ') [0] + '\'s';
 
 
-    console.log(clicked_id);
-    console.log("HELLO");
-
+//Due to time restraints + readability concerns I'm gonna leave this as a large if Else statement
+//Basically it updates the area 
     if (clicked_id === 'melanie') {
         studentName = 'Melanie Gagne';
         studentSkills = 'Branding • Visual Identity • Packaging • Web Design';
@@ -106,7 +105,7 @@ let studentFirstName = studentName.split(' ') [0] + '\'s';
 
     } else if ( clicked_id === 'james') {
         studentName = 'James Ross'
-        studentSkills = 'Web Development • UI/UX • Packaging • Branding';
+        studentSkills = 'Web Development • UI/UX • Packaging • Motion Graphics';
         studentAbout = 'James needs to finish this';
         studentLink = './students/jamesross/ross.html';
         studentFirstName = studentName.split(' ') [0] + '\'';
@@ -129,7 +128,7 @@ let studentFirstName = studentName.split(' ') [0] + '\'s';
 
     } else if ( clicked_id === 'matt') {
         studentName = 'Matthew Bacon'
-        studentSkills = 'Illustration • Illustration • Photography • Editorial';
+        studentSkills = 'Web Development • UI/UX • Motion Graphics';
         studentAbout = 'Matt needs to finish this';
         studentLink = './students/matthewbacon/bacon.html';
         studentFirstName = studentName.split(' ') [0] + '\'s';
@@ -282,12 +281,8 @@ let studentFirstName = studentName.split(' ') [0] + '\'s';
         section4.style.display = "block";
         //END OF SECTION 4 STUDENT CARDS
     };
-    
-    
 
-
-
-
+//THIS SECTION UPDATES ALL THE ELEMENTS USING A FOR STATEMENT THAT LOOPS OVER ALL ELEMENTS WITHIN A CLASS
 
 let studentNameArea = document.getElementsByClassName('studentName');
 for(let i = 0; i < studentNameArea.length; i++) {
@@ -321,11 +316,46 @@ for(let i = 0; i < studentFirstNameArea.length; i++) {
 
 //For Project Section on homepage
 var projectElement = document.getElementById("ProjectElement");
-var element = document.getElementById("abbie_project")
+//var element = document.getElementById("abbie_project")
+
 
 
 function hover(element) {
-    projectElement.setAttribute('src', './img/studentHeadshots/Abbie.jpg');
+    console.log(element);
+    if (element === 'abbie_project') {
+    projectElement.setAttribute('src', './img/featuredProject/Abbie.png');
+    } else if (element === 'alex_project') {
+        projectElement.setAttribute('src', './img/featuredProject/alex.png');
+    } else if (element === 'connor_project') {
+        projectElement.setAttribute('src', './img/featuredProject/connor.png');
+    } else if (element === 'emily_project') {
+        projectElement.setAttribute('src', './img/featuredProject/emily.png');
+    } else if (element === 'heather_project') {
+        projectElement.setAttribute('src', './img/featuredProject/heather.png');
+    } else if (element === 'hunter_project') {
+        projectElement.setAttribute('src', './img/featuredProject/hunter.png');
+    } else if (element === 'james_project') {
+        projectElement.setAttribute('src', './img/featuredProject/james.png');
+    } else if (element === 'jasmineM_project') {
+        projectElement.setAttribute('src', './img/featuredProject/jasmineM.png');
+    } else if (element === 'jasmine_project') {
+        projectElement.setAttribute('src', './img/featuredProject/jasmine.png');
+    } else if (element === 'kasey_project') {
+        projectElement.setAttribute('src', './img/featuredProject/kasey.png');
+    } else if (element === 'madison_project') {
+        projectElement.setAttribute('src', './img/featuredProject/madison.png');
+    } else if (element === 'matthew_project') {
+        projectElement.setAttribute('src', './img/featuredProject/matt.png');
+    } else if (element === 'melanie_project') {
+        projectElement.setAttribute('src', './img/featuredProject/melanie.png');
+    } else if (element === 'miranda_project') {
+        projectElement.setAttribute('src', './img/featuredProject/miranda.png');
+    } else if (element === 'mitu_project') {
+        projectElement.setAttribute('src', './img/featuredProject/mitu.png');
+    } else if (element === 'montana_project') {
+        projectElement.setAttribute('src', './img/featuredProject/montana.png');
+    }
+
   }
   
   function unhover(element) {
