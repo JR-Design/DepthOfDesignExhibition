@@ -155,6 +155,10 @@ for(let i = 0; i < studentFirstNameArea.length; i++) {
 
 }
 
+
+
+
+//For Project Section on homepage
 var projectElement = document.getElementById("ProjectElement");
 var element = document.getElementById("abbie_project")
 
