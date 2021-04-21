@@ -94,7 +94,6 @@ html {
 
 h1 {
   font-family: Noctis;
-  font-style: normal;
   font-weight: 800;
   font-size: 64px;
   line-height: 100%;
@@ -164,7 +163,7 @@ h4 {
   color: #000000;
 }
 .bodybig {
-  font-family: Gothamlight, sans-serif;
+  font-family: Gothambook, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -173,7 +172,7 @@ h4 {
   color: #000000;
 }
 .body {
-  font-family: Gothamlight, sans-serif;
+  font-family: Gothambook, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -201,7 +200,7 @@ h4 {
   color: #000000;
 }
 .bodysmall {
-  font-family: Gothamlight, sans-serif;
+  font-family: Gothambook, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

@@ -233,6 +233,29 @@ body {
   margin-top: 4px;
 }
 
+.student_about section {
+    margin: 0 0 0 auto;
+    /* display: block; */
+    width: 90%;
+    padding-bottom: 50px;
+}
+.student_about section h1 {
+    font-size: 30px;
+}
+.student_about section h4 {
+    margin-top: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+.student_about section p {
+    font-size: 16px;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-bottom: 38px;
+}
+
+
 /*-- PROJECT SECTION 4 --*/
 #section4 {
   padding: 50px 0px;
@@ -396,12 +419,24 @@ body {
     margin-bottom: 100px;
 }
 
-
-
-
+.desktop {
+    display: none;
+}
+.tablet {
+    display: none;
+}
 
 /* Tablet */
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 830px) {
+
+.desktop {
+    display: none;
+}
+.tablet {
+    display: none;
+}
+
+
   /*---- ABOUT SECTION 2 ----*/
   #section2 section {
     grid-template-areas:
