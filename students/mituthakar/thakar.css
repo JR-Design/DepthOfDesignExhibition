@@ -1,0 +1,18 @@
+#landingstudent {
+  width: 100vw;
+  min-height: 80vh;
+  max-height: 100vh;
+  background-position: right;
+  background-color: aqua;
+  background-image: url("portrait.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1023px) {
+  #landingstudent {
+    background-position: center;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 560px) {
+}
