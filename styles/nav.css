@@ -47,7 +47,7 @@ nav {
 #leftnav .line {
   position: absolute;
   left: 1.5vw;
-  top: 30vh;
+  top: 25vh;
   width: 2px;
   height: 60vh;
   border-radius: 2px;
@@ -80,7 +80,7 @@ nav {
 #leftnav .line2 {
   position: absolute;
   left: 1.5vw;
-  margin-top: 30vh;
+  margin-top: 25vh;
   margin-bottom: 20vh;
   width: 2px;
   height: 10vh;
