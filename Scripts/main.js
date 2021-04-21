@@ -124,7 +124,6 @@ let studentFirstName = studentName.split(' ') [0] + '\'s';
         
         section1_1.style.display = "none";
         section1.style.display = "block";
-
     };
 
 
@@ -155,6 +154,21 @@ for(let i = 0; i < studentFirstNameArea.length; i++) {
 }
 
 }
+
+var projectElement = document.getElementById("ProjectElement");
+var element = document.getElementById("abbie_project")
+
+
+function hover(element) {
+    projectElement.setAttribute('src', './img/studentHeadshots/Abbie.jpg');
+  }
+  
+  function unhover(element) {
+    projectElement.setAttribute('src', '');
+  }
+
+
+
 /*
 studentNameArea.innerText = studentName;
 studentSkillsArea.innerText = studentSkills;
