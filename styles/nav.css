@@ -9,7 +9,7 @@
   color: #252529;
   margin-left: 80px;
   margin-top: 30vh;
-  transition: 0.2s;
+  /* transition: 0.2s; */
 }
 nav a {
   text-decoration: none;
@@ -37,7 +37,7 @@ nav {
 }
 
 #leftnav img {
-  margin-top: 21px;
+  margin-top: 14px;
   margin-left: -0.1vw;
   max-width: 60px;
   width: 10vw;
@@ -130,5 +130,8 @@ color: var(--primary);
   }
   nav {
     padding-right: 21.25px;
+  }
+  #leftnav img {
+    margin-top: 21px;
   }
 }
