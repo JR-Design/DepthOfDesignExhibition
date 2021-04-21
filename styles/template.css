@@ -105,6 +105,10 @@
   object-fit: contain;
   width: 100%;
 }
+#s2_halfwidth video {
+  max-height: 100%;
+  max-width: 100%;
+}
 #s3_halfwidth {
   margin: 25px 0px;
 }
