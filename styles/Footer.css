@@ -2,10 +2,11 @@ footer {
   z-index: 100;
   background-color: var(--light_grey);
   width: 100vw;
-  height: 35vh;
+  min-height: 200px;
   text-align: center;
   display: grid;
   grid-template-columns: auto auto auto;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
   justify-content: center;
   place-items: center;
   align-items: center;
