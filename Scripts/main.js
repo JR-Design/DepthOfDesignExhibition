@@ -236,7 +236,7 @@ let studentFirstName = studentName.split(' ') [0] + '\'s';
         studentName = 'Emily Anderson'
         studentSkills = 'Illustration • Illustration • Photography • Editorial';
         studentAbout = 'Emily has acquired a higher interest in advertising and illustration while also looking to further her skills in motion graphics. She has developed a delicate, minimalistic style that she showcases throughout her work.';
-        studentLink = 'easyAs123.abc/meAndYouGirl';
+        studentLink = './students/emilyanderson/anderson.html';
         studentFirstName = studentName.split(' ') [0] + '\'s';
 
         resetStudentAbout();
