@@ -218,6 +218,10 @@ body {
   text-align: left;
   display: inline-block;
 }
+
+.student_card:not(#activeStudent) {
+    opacity: 70%;
+}
 .student_card::before {
     background-color: #495bfdb4;
     content:'';
@@ -232,6 +236,8 @@ body {
     width: 19.5vw;
     display:none;
 }
+
+
 
 .student_card img {
   width: 100%;
@@ -505,6 +511,7 @@ body {
     width: 40vw;
     display:none;
 }
+
 
   .student_info p,
   .student_info a {
