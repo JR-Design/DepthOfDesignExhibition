@@ -199,6 +199,7 @@ body {
   margin: 0% 0vw 70px 0.9vw;
   text-align: left;
   display: inline-block;
+  cursor: pointer;
 }
 
 .student_card:not(#activeStudent) {
@@ -221,7 +222,11 @@ body {
 
 .student_card img {
   width: 100%;
+  cursor: pointer;
 }
+.student_card img::hover {
+    cursor: pointer;
+  }
 
 .student_info p,
 .student_info a {
