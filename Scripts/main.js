@@ -52,7 +52,14 @@ window.onresize = function() {
     section3.style.display = "none";
     section4_1.style.display = "none";
     section4.style.display = "none";
-    activeStudentSection.removeAttribute('id');
+
+    var items2 = document.querySelectorAll('.student_card');
+    for(let i = 0; i < items2.length; i++) {
+        items2[i].style.opacity = '100%';
+        console.log(i);
+    }    
+    activeStudent = document.getElementById("activeStudent").removeAttribute('id');
+
 }
 
 function resetStudentAbout() {
@@ -64,8 +71,19 @@ function resetStudentAbout() {
     section3.style.display = "none";
     section4_1.style.display = "none";
     section4.style.display = "none";
+    
 
+    var items2 = document.querySelectorAll('.student_card');
+    for(let i = 0; i < items2.length; i++) {
+        items2[i].style.opacity = '100%';
+        console.log(i);
+    }
 
+    activeStudent2 = document.getElementById("activeStudent");
+
+    if(activeStudent2 !== null) {    
+    activeStudent2 = activeStudent2.removeAttribute('id');
+    }
 }
 
 
@@ -105,8 +123,10 @@ let activeStudent = clicked_id.parentElement;
 
 
         resetStudentAbout();
+        console.log("1");
 
         activeStudent = activeStudent.setAttribute("id", "activeStudent");
+        console.log("2");
         if (windowWidth <= 860){
             section1_1.style.display = "block"
         } else if (windowWidth > 860){
@@ -116,7 +136,7 @@ let activeStudent = clicked_id.parentElement;
 
     } else if ( clicked_id.id === 'james') {
        
-        activeStudent = activeStudent.setAttribute("id", "activeStudent");
+       
         studentName = 'James Ross'
         studentSkills = 'Web Development • UI/UX • Packaging • Motion Graphics';
         studentAbout = 'James needs to finish this';
@@ -124,15 +144,15 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'';
 
         
-
-        
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
+
         if (windowWidth <= 860){
             section1_1.style.display = "block";
         } else if (windowWidth > 860){
             section1.style.display = "block";
         }
-    } else if ( clicked_id === 'jasmine') {
+    } else if ( clicked_id.id === 'jasmine') {
         studentName = 'Jasmine Paquette'
         studentSkills = 'Branding • Visual Identity • Packaging';
         studentAbout = 'Jasmine is a dynamic graphic designer in the making after having studied its many sectors at Cambrian College. Over the past three years, she has developed a fondness for anything branding, illustration and layout. She believes there is a unique approach to each problem, and nothing is ever too far out of the box because outside of the box is where design belongs.';
@@ -140,9 +160,10 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
         
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         section1.style.display = "block";
 
-    } else if ( clicked_id === 'matt') {
+    } else if ( clicked_id.id === 'matt') {
         studentName = 'Matthew Bacon'
         studentSkills = 'Web Development • UI/UX • Motion Graphics';
         studentAbout = 'Matt needs to finish this';
@@ -150,10 +171,11 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
         
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         section1.style.display = "block";
         //END OF SECTION 1 STUDENT CARDS
         
-    }  else if ( clicked_id === 'connor') {
+    }  else if ( clicked_id.id === 'connor') {
         //START OF SECTION 2 STUDENT CARDS
         studentName = 'Connor Paradis'
         studentSkills = 'Branding • Visual Identity • Advertising • Photography • Editorial';
@@ -162,13 +184,14 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
 
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         if (windowWidth <= 860){
             section2_1.style.display = "block"
         } else if (windowWidth > 860){
             section2.style.display = "block"
         }
 
-    } else if ( clicked_id === 'hunter') {
+    } else if ( clicked_id.id === 'hunter') {
         studentName = 'Hunter Maticiw'
         studentSkills = 'Packaging • Advertising • Illustration';
         studentAbout = 'Hunter is an illustration based designer that likes to brings his creative style to every project possible. His time in the graphic design program has cultivated his appreciation for creative learning, which he would like to continue after graduation with 3D modelling and animation.';
@@ -176,12 +199,13 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
 
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         if (windowWidth <= 860){
             section2_1.style.display = "block";
         } else if (windowWidth > 860){
             section2.style.display = "block";
         }
-    }  else if ( clicked_id === 'miranda') {
+    }  else if ( clicked_id.id === 'miranda') {
         studentName = 'Miranda Jarvis'
         studentSkills = 'Illustration • Editorial • Product • Branding';
         studentAbout = 'Miranda enjoys taking an unconventional approach to design. She isn’t afraid to step away from the computer to try solving design problems through any medium available.';
@@ -189,9 +213,10 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
         
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         section2.style.display = "block";
 
-    } else if ( clicked_id === 'alex') {
+    } else if ( clicked_id.id === 'alex') {
         studentName = 'Alexandre Venne'
         studentSkills = 'Branding • Visual Identity • Advertising • Photography • Editorial';
         studentAbout = 'Up and coming graphic designer with a uniquely scientific mind. Driven with an insatiable curiosity to learn more, he is constantly looking for projects that lye beyond his comfort zone.';
@@ -199,9 +224,10 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
         
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         section2.style.display = "block";
         //END OF SECTION 2 STUDENT CARDS
-    } else if ( clicked_id === 'jasmineM') {
+    } else if ( clicked_id.id === 'jasmineM') {
         //START OF SECTION 3 STUDENT CARDS
         studentName = 'Jasmine Morin'
         studentSkills = 'Visual Identity • Illustration • Packaging • Print';
@@ -209,25 +235,27 @@ let activeStudent = clicked_id.parentElement;
         studentLink = './students/jasminemorin/morin.html';
         studentFirstName = studentName.split(' ') [0] + '\'s';
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         if (windowWidth <= 860){
             section3_1.style.display = "block"
         } else if (windowWidth > 860){
             section3.style.display = "block"
         }
 
-    } else if ( clicked_id === 'kasey') {
+    } else if ( clicked_id.id === 'kasey') {
         studentName = 'Kasey Pulvermacher'
         studentSkills = 'Illustration • Branding • Print';
         studentAbout = 'Kasey only started learning about what graphic design was when they first came to Cambrian, the course was able to teach them how to bring their illustration work, with many different aspects of design.';
         studentLink = './students/kaseypulvermacher/pulvermacher.html';
         studentFirstName = studentName.split(' ') [0] + '\'s';
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         if (windowWidth <= 860){
             section3_1.style.display = "block";
         } else if (windowWidth > 860){
             section3.style.display = "block";
         }
-    }  else if ( clicked_id === 'madison') {
+    }  else if ( clicked_id.id === 'madison') {
         studentName = 'Madison Lemieux'
         studentSkills = 'Branding • Visual Identity • UI/UX Design • Social Good';
         studentAbout = 'Madison is one of those designers that can’t help but put their interests into every project. Any chance she gets she will include vibrant colours and expressive typography. Of course, she also makes sure to fit the tone as she enjoys tackling many serious social issues in her projects.';
@@ -235,9 +263,10 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
         
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         section3.style.display = "block";
 
-    } else if (clicked_id === 'abbie') {
+    } else if (clicked_id.id === 'abbie') {
         studentName = 'Abbie Trottier';
         studentSkills = 'Branding • Visual Identity • Layout • Social Media';
         studentAbout = 'Abbie is a Cambrian College student who works as a graphic designer at a marketing agency in Sudbury, Ontario. Her specialties include digital illustration, layout design, marketing, and branding.';
@@ -245,9 +274,10 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
         
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         section3.style.display = "block";
         //END OF SECTION 3 STUDENT CARDS
-    } else if ( clicked_id === 'emily') {
+    } else if ( clicked_id.id === 'emily') {
         //START OF SECTION 4 STUDENT CARDS
         studentName = 'Emily Anderson'
         studentSkills = 'Illustration • Illustration • Photography • Editorial';
@@ -256,13 +286,14 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
 
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         if (windowWidth <= 860){
             section4_1.style.display = "block"
         } else if (windowWidth > 860){
             section4.style.display = "block"
         }
 
-    } else if ( clicked_id === 'heather') {
+    } else if ( clicked_id.id === 'heather') {
         studentName = 'Heather Lashuk'
         studentSkills = 'Print • Photography • Editorial • Illustration';
         studentAbout = 'Throughout the three years in the Graphic Design Program at Cambrian, she has learned various skills and what areas of the field she wishes to pursue. She enjoys experimenting with photography and illustration.';
@@ -270,12 +301,13 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
 
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         if (windowWidth <= 860){
             section4_1.style.display = "block";
         } else if (windowWidth > 860){
             section4.style.display = "block";
         }
-    }  else if ( clicked_id === 'mitu') {
+    }  else if ( clicked_id.id === 'mitu') {
         studentName = 'Mitu Thakkar'
         studentSkills = 'Illustration • Social Good • Typography ';
         studentAbout = 'Mitu has vast knowledge in various aspects of designing, including but not limited to illustration, typography, and motion graphics. Her interest lies in the field of abstract, minimalist, and free-hand illustrations.';
@@ -283,9 +315,10 @@ let activeStudent = clicked_id.parentElement;
         studentFirstName = studentName.split(' ') [0] + '\'s';
         
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         section4.style.display = "block";
 
-    } else if (clicked_id === 'montana') {
+    } else if (clicked_id.id === 'montana') {
         studentName = 'Montana Brandow';
         studentSkills = 'Illustration • Print • Packaging • Branding';
         studentAbout = 'Montana enjoys the outdoors and spending time in nature. She loves to incorporate nature into her projects any chance she can get.';
@@ -294,6 +327,7 @@ let activeStudent = clicked_id.parentElement;
         
 
         resetStudentAbout();
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         section4.style.display = "block";
         //END OF SECTION 4 STUDENT CARDS
     };
@@ -328,6 +362,7 @@ for(let i = 0; i < studentFirstNameArea.length; i++) {
 var items = document.querySelectorAll('.student_card:not(#activeStudent)');
 for(let i = 0; i < items.length; i++) {
     items[i].style.opacity = '70%';
+    console.log(i);
 }
 
 }
@@ -337,7 +372,6 @@ for(let i = 0; i < items.length; i++) {
 
 //For Project Section on homepage
 var projectElement = document.getElementById("ProjectElement");
-//var element = document.getElementById("abbie_project")
 
 
 

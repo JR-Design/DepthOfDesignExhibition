@@ -223,7 +223,8 @@ body {
     opacity: 100%;
 }
 #activeStudent::before {
-    background-color: #495bfdb4;
+    /*background-color: #495bfdb4;*/
+    background-color: rgba(73, 91, 253, 0.6);
     content:'';
     z-index: 1;
     position: absolute;
@@ -261,6 +262,7 @@ body {
 .student_about section h1 {
     font-size: 30px;
 }
+
 .student_about section h4 {
     margin-top: 16px;
     font-size: 14px;
