@@ -116,7 +116,7 @@ let activeStudent = clicked_id.parentElement;
 //Basically it updates the area 
     if (clicked_id.id === 'melanie') {
         studentName = 'Melanie Gagne';
-        studentSkills = 'Branding • Visual Identity • Packaging • Web Design';
+        studentSkills = 'Branding • Packaging • Typography • Illustration';
         studentAbout = 'Melanie is an interdisciplinary creative who is constantly exploring new mediums, both tangible and digital. As a designer, she heavily focuses on the research and exploration portion of any project, emphasizing meaning and creating more profound values for every design.';
         studentLink = './students/melaniegagne/gagne.html';
         studentFirstName = studentName.split(' ') [0] + '\'s';

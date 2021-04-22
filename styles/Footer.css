@@ -2,11 +2,11 @@ footer {
   z-index: 100;
   background-color: var(--light_grey);
   width: 100vw;
-  min-height: 200px;
+  height: 35vh;
   text-align: center;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   place-items: center;
   align-items: center;
@@ -98,6 +98,10 @@ footer {
 footer img {
   max-width: 130px;
   max-height: 70px;
+}
+footer img#ig,
+footer img#fb {
+  width: 50%;
 }
 /* Tablet */
 @media all and (max-width: 1023px) {
