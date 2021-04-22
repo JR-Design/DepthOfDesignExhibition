@@ -264,7 +264,9 @@ li {
   text-transform: uppercase;
   color: #fff;
 }
-
+#mobilebio {
+  display: none;
+}
 li span {
   display: block;
   font-size: 4.5rem;
@@ -313,16 +315,16 @@ li span {
 }
 /* Mobile */
 @media only screen and (max-width: 560px) {
+  #landingbio p.bodybig {
+    display: none;
+  }
   #landingbio {
-    margin-left: max(20px, 2%);
-    padding-top: 15vh;
-    width: 55%;
-    /* background-color: var(--white);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); */
+    width: 45%;
+    margin-left: 6vw;
+    padding-top: 30vh;
   }
   #landingsocial span {
-    margin: 25px 10px 0px 0px;
+    margin: 25px 100px 0px 0px;
   }
   #landingsocial {
     margin-bottom: 25px;
@@ -331,5 +333,10 @@ li span {
     margin-top: 0px;
     backdrop-filter: blur(10px);
     width: 100%;
+  }
+  #mobilebio {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
   }
 }
