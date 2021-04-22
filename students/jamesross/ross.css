@@ -12,9 +12,12 @@
 .imageScroll {
   height: 693px;
   overflow: hidden;
-  max-width: 1150px;
-  margin: 0px auto;
+  max-width: 1260px;
+  margin: 50px auto;
   border-radius: 25px;
+  /* background: none; */
+  border: 0 none;
+  background: white;
 }
 
 /*---- CIRCUITS ANIMATION JAZZ -----*/
