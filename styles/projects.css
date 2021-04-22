@@ -13,9 +13,9 @@
   width: 20vw;
   margin-bottom: 100px;
 }
-.projectsc:nth-last-child(1) {
+/* .projectsc:nth-last-child(1) {
   grid-column: 1 / span 3;
-}
+} */
 
 .projectsc img {
   max-width: 100%;
@@ -30,6 +30,6 @@
     grid-template-columns: auto auto;
   }
   .projectsc {
-    width: 40vw;
+    max-width: 40vw;
   }
 }
