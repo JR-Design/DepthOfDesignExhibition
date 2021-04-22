@@ -27,6 +27,7 @@
 #landingsocial a {
   text-decoration: none;
 }
+
 #showcase {
   margin-top: -50px;
   backdrop-filter: blur(10px);
@@ -263,7 +264,9 @@ li {
   text-transform: uppercase;
   color: #fff;
 }
-
+#mobilebio {
+  display: none;
+}
 li span {
   display: block;
   font-size: 4.5rem;
@@ -293,15 +296,47 @@ li span {
   }
   .projecttitle .body,
   .projecttitle .bigsubtitle {
-    width: 80%;
+    width: 100%;
   }
   .projecttitle {
-    margin: 50px 90px 80px;
+    margin: 50px 45px 80px;
+  }
+  .wrapper {
+    max-width: 1440px;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  #w1_fullwidth_1 {
+    max-height: 100vh;
+
+    margin-top: 150px;
+    margin-bottom: 50px;
   }
 }
 /* Mobile */
 @media only screen and (max-width: 560px) {
+  #landingbio p.bodybig {
+    display: none;
+  }
   #landingbio {
-    margin-left: max(20px, 2%);
+    width: 45%;
+    margin-left: 6vw;
+    padding-top: 30vh;
+  }
+  #landingsocial span {
+    margin: 25px 100px 0px 0px;
+  }
+  #landingsocial {
+    margin-bottom: 25px;
+  }
+  #showcase {
+    margin-top: 0px;
+    backdrop-filter: blur(10px);
+    width: 100%;
+  }
+  #mobilebio {
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
   }
 }

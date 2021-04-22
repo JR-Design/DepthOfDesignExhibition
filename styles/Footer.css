@@ -83,6 +83,9 @@ footer {
   grid-column: 1;
   grid-row: 1/2;
 }
+#footernav {
+  margin: 25px 0px;
+}
 #footernav a {
   text-decoration: none;
   margin-bottom: 50px;
