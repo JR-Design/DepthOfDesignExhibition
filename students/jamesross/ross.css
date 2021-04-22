@@ -8,11 +8,73 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+/*-- Image overlay animation --*/
+.imageScroll {
+  height: 693px;
+  overflow: hidden;
+  max-width: 1150px;
+  margin: 0px auto;
+  border-radius: 25px;
+}
+
+/*---- CIRCUITS ANIMATION JAZZ -----*/
+@keyframes Circuits {
+0%    {margin-top: 0%}
+12%    {margin-top: -1%}
+16%    {margin-top: -45%}
+28%    {margin-top: -50%}
+34%   {margin-top: -85%}
+42%   {margin-top: -90%}
+48%   {margin-top: -140%}
+56%   {margin-top: -145%}
+62%    {margin-top: -210%}
+70%   {margin-top: -215%}
+76%   {margin-top: -305%}
+84%   {margin-top: -310%}
+95%  {margin-top: -380%}
+100% {margin-top: -1%}
+}
+
+.imageScroll .circuits {
+  max-width: 100%;
+  margin-top: 0;
+  animation: Circuits 20s infinite;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background: white;
+}
+
+
+
 @media only screen and (max-width: 1023px) {
   #landingstudent {
     background-position: center;
   }
+  /---- CIRCUITS ANIMATION JAZZ TABLET -----/
+@keyframes Circuits {
+  0%    {margin-top: 0%}
+  12%    {margin-top: -1%}
+  16%    {margin-top: -45%}
+  28%    {margin-top: -50%}
+  34%   {margin-top: -85%}
+  42%   {margin-top: -90%}
+  48%   {margin-top: -140%}
+  56%   {margin-top: -145%}
+  62%    {margin-top: -210%}
+  70%   {margin-top: -215%}
+  76%   {margin-top: -300%}
+  84%   {margin-top: -310%}
+  95%  {margin-top: -350%}
+  100% {margin-top: -1%}
+  }
+
 }
 /* Mobile */
 @media only screen and (max-width: 560px) {
+  /--- Circuits ANIMATION JAZZ PHONE -----/
+  @keyframes Circuits {
+    0%    {margin-top: 0%}
+    12%    {margin-top: -1%}
+    95%  {margin-top: -225%}
+    100% {margin-top: -1%}
+    }
 }
