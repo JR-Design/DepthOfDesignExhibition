@@ -139,7 +139,7 @@ let activeStudent = clicked_id.parentElement;
        
         studentName = 'James Ross'
         studentSkills = 'Web Development • UI/UX • Packaging • Motion Graphics';
-        studentAbout = 'James has pursued a multi-disciplinary approach to his education by learning graphic design at Cambrian College while pursing teaching himself development and UI/UX while working as a web developer/designer in Sudbury for 3 years. ';
+        studentAbout = 'Throughout his time in the program, James has advanced his career while independently learning web development and UI/UX. Having worked in the field while simultaneously finishing his studies, he will continue to pursue full-stack development while going on to hopefully lead a small successful business.  ';
         studentLink = './students/jamesross/ross.html';
         studentFirstName = studentName.split(' ') [0] + '\'';
 
