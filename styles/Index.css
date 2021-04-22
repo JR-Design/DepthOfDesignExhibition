@@ -175,7 +175,7 @@ body {
 }
 .section3_students > h1,
 .section3_students > p {
-  max-width: calc(570px + 10vw);
+  max-width: calc(450px + 10vw);
   margin: 0% 1.25vw;
 }
 .section3_students > h1 {
