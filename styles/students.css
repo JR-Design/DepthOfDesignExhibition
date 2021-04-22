@@ -7,9 +7,10 @@
   width: 100vw;
   margin-bottom: 10vh;
 }
-#studentsland h1,
-#studentsland p {
-  width: 50vw;
+#studentsland > h1,
+#studentsland > p {
+  max-width: calc(450px + 10vw);
+  margin: 0% 1.25vw;
 }
 @media only screen and (max-width: 840px) {
   #studentsland {
