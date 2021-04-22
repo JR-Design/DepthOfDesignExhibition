@@ -13,302 +13,446 @@
     <link rel="stylesheet" href="styles/Index.css" />
     <title>Depth Of Design | Students</title>
   </head>
-  <body>
-    <body onscroll="pageDepth()">
-        <div id="leftnav">
-            <a href="./index.html"><img src="./img/Gradshow_2021_Logo_RGB_Colour.svg" alt=""></a>
-          <span class="line"></span>
-          <span id="progressbar" class="line2">
-          </span>
+  <!-- LEFT OVERLAY FOR NAV -->
+
+  <body onscroll="pageDepth()">
+    <div id="leftnav">
+      <a href="./index.html"
+        ><img src="./img/Gradshow_2021_Logo_RGB_Colour.svg" alt=""
+      /></a>
+      <span class="line"></span>
+      <span id="progressbar" class="line2"> </span>
+    </div>
+
+    <!-- NORMAL NAV -->
+    <nav on>
+      <div>
+        <a href="students.html"><span class="navtext">Students</span></a>
+        <a href="projects.html"><span class="navtext">Projects</span></a>
+        <a href="index.html#about"><span class="navtext">About</span></a>
+      </div>
+    </nav>
+    <section id="section3">
+      <section class="section3_students">
+        <div id="studentsland">
+          <h1>Meet the Students</h1>
+          <p class="bodybig">
+            Visit our graduates’ profiles and discover what drives each student
+            and how they’ve applied it to their variety of work.
+          </p>
         </div>
-    
-      <!-- NORMAL NAV -->
-        <nav on>
-          <div>
-            <a href="students.html"><span class="navtext">Students</span></a>
-            <a href="projects.html"><span class="navtext">Projects</span></a>
-            <a href="index.html#about"><span class="navtext">About</span></a>
-          </div>
-        </nav>
-        <section id="section3">
-            <section class="section3_students">
-                <div id="studentsland">
-              <h1>Meet the Students</h1>
-              <p class="bodybig">Visit our graduates’ profiles and discover what drives each student and how they’ve applied it to their variety of work.</p>
-            </div>
-              <div>
-      
-                <!-- FIRST ROW -->
-                
-                <div id="activeStudent" class="student_card">
-                  <img id="melanie" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Smelly.jpg" alt="Melanie Gagne's head-shot">
-                  <div class="student_info">
-                    <p class="body">Creative Direction</p>
-                    <a href="./students/melaniegagne/gagne.html" class="bodybold_med">Melanie Gagne</a>
-                  </div>
-                </div>
-                
-      
-                <div class="student_card">
-                  <img id="james" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/James.jpg" alt="James Ross' head-shot">
-                  <div class="student_info">
-                    <p class="body">Web & Creative Direction</p>
-                    <a href="./students/jamesross/ross.html" class="bodybold_med">James Ross</a>
-                  </div>
-                </div>
-      
-                <div id="about_1_1" class="student_about tablet">
-                  <section>
-                    <h1 class="studentName"></h1>
-                    <h4 class="studentSkills"></h4>
-                    <p class="bodybig studentAbout">
-                    </p>
-                    <a class="studentLink" href="#" >
-                      <div class="Black_button"> See <span class="studentFirstName"></span> work </div>
-                    </a>
-                  </section>
-                </div>
-      
-                <div class="student_card">
-                  <img id="jasmine" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Jasmine.jpg" alt="Jasmine Paquette' head-shot">
-                  <div class="student_info">
-                    <p class="body">Creative Direction Team</p>
-                    <a href="./students/jasminepaquette/paquette.html" class="bodybold_med">Jasmine Paquette</a>
-                  </div>
-                </div>
-      
-                <div class="student_card">
-                  <img id="matt" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Matt.jpg" alt="Matt Bacon's head-shot">
-                  <div class="student_info">
-                    <p class="body">Web & Photography Team</p>
-                    <a href="./students/matthewbacon/bacon.html" class="bodybold_med">Matthew Bacon</a>
-                  </div>
-                </div>
-      
-                <div id="about_1" class="student_about desktop">
-                  <section>
-                    <h1 class="studentName"></h1>
-                    <h4 class="studentSkills"></h4>
-                    <p class="bodybig studentAbout"></p>
-                    <a class="studentLink" href="#" >
-                      <div class="Black_button"> See <span class="studentFirstName"></span> work </div>
-                    </a>
-                  </section>
-                </div>
-      
-                <!-- SECOND ROW -->
-                <div class="student_card">
-                  <img id="connor" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Connor.jpg" alt="Connor Paradis' headshot">
-                  <div class="student_info">
-                    <p class="body">Photography Team</p>
-                    <a href="./students/connorparadis/paradis.html" class="bodybold_med">Connor Paradis</a>
-                  </div>
-                </div>
-      
-                <div class="student_card">
-                  <img id="hunter" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Hunter.jpg" alt="Hunter Maticiw's headshot">
-                  <div class="student_info">
-                    <p class="body">Photography Team</p>
-                    <a href="./students/huntermaticiw/maticiw.html" class="bodybold_med">Hunter Maticiw</a>
-                  </div>
-                </div>
-      
-                <div id="about_2_1" class="student_about tablet">
-                  <section>
-                    <h1 class="studentName"></h1>
-                    <h4 class="studentSkills"></h4>
-                    <p class="bodybig, studentAbout">
-                    </p>
-                    <a class="studentLink" href="#" >
-                      <div class="Black_button"> See <span class="studentFirstName"></span> work </div>
-                    </a>
-                  </section>
-                </div>
-      
-                <div class="student_card">
-                  <img id="miranda" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Miranda.jpg" alt="Miranda Jarvis' headshot">
-                  <div class="student_info">
-                    <p class="body">Photography Team</p>
-                    <a href="./students/mirandajarvis/jarvis.html" class="bodybold_med">Miranda Jarvis</a>
-                  </div>
-                </div>
-      
-                <div class="student_card">
-                  <img id="alex" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Alex.jpg" alt="Alexandre Venne's headshot">
-                  <div class="student_info">
-                    <p class="body">Copywriting Team</p>
-                    <a href="./students/alexandrevenne/venne.html" class="bodybold_med">Alexandre Venne</a>
-                  </div>
-                </div>
-      
-                <div id="about_2" class="student_about desktop">
-                  <section>
-                    <h1 class="studentName"></h1>
-                    <h4 class="studentSkills"></h4>
-                    <p class="bodybig, studentAbout">
-                    </p>
-                    <a class="studentLink" href="#" >
-                      <div class="Black_button"> See <span class="studentFirstName"></span> work </div>
-                    </a>
-                  </section>
-                </div>
-      
-                <!-- THIRD ROW -->
-                <div class="student_card">
-                  <img id="jasmineM" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Jasmine_M.jpg" alt="Jasmine Morin's headshot">
-                  <div class="student_info">
-                    <p class="body">Copywriting Team</p>
-                    <a href="./students/jasminemorin/morin.html" class="bodybold_med">Jasmine Morin</a>
-                  </div>
-                </div>
-      
-                <div class="student_card">
-                  <img id="kasey" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Kasey.jpg" alt="Kasey Pulvermacher's headshot">
-                  <div class="student_info">
-                    <p class="body">Copywriting Team</p>
-                    <a href="./students/kaseypulvermacher/pulvermacher.html" class="bodybold_med">Kasey Pulvermacher</a>
-                  </div>
-                </div>
-      
-                <div id="about_3_1" class="student_about tablet">
-                  <section>
-                    <h1 class="studentName"></h1>
-                    <h4 class="studentSkills"></h4>
-                    <p class="bodybig, studentAbout">
-                    </p>
-                    <a class="studentLink" href="#" >
-                      <div class="Black_button"> See <span class="studentFirstName"></span> work </div>
-                    </a>
-                  </section>
-                </div>
-      
-                <div class="student_card">
-                  <img id="madison" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Madison.jpg" alt="Madison Lemieux's headshot">
-                  <div class="student_info">
-                    <p class="body">Copywriting Team</p>
-                    <a href="./students/madisonlemieux/lemieux.html" class="bodybold_med">Madison Lemieux</a>
-                  </div>
-                </div>
-      
-                <div class="student_card">
-                  <img id="abbie" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Abbie.jpg" alt="Abbie Trottier's headshot">
-                  <div class="student_info">
-                    <p class="body">Social Media Team</p>
-                    <a href="./students/abbietrottier/trottier.html" class="bodybold_med">Abbie Trottier</a>
-                  </div>
-                </div>
-      
-                <div id="about_3" class="student_about desktop">
-                  <section>
-                    <h1 class="studentName"></h1>
-                    <h4 class="studentSkills"></h4>
-                    <p class="bodybig, studentAbout">
-                    </p>
-                    <a class="studentLink" href="#" >
-                      <div class="Black_button"> See <span class="studentFirstName"></span> work </div>
-                    </a>
-                  </section>
-                </div>
-      
-      
-                <!-- FOURTH ROW -->
-                <div class="student_card">
-                  <img id="emily" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Emily.jpg" alt="Emily Anderson's headshot">
-                  <div class="student_info">
-                    <p class="body">Social Media Team</p>
-                    <a href="./students/emilyanderson/anderson.html" class="bodybold_med">Emily Anderson</a>
-                  </div>
-                </div>
-      
-                <div class="student_card">
-                  <img id="heather" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Heather.jpg" alt="Heather Lashuk's headshot">
-                  <div class="student_info">
-                    <p class="body">Social Media Team</p>
-                    <a href="./students/heatherlashuk/lashuk.html" class="bodybold_med">Heather Lashuk</a>
-                  </div>
-                </div>
-                
-                <div id="about_4_1" class="student_about tablet">
-                  <section>
-                    <h1 class="studentName"></h1>
-                    <h4 class="studentSkills"></h4>
-                    <p class="bodybig, studentAbout">
-                    </p>
-                    <a class="studentLink" href="#" >
-                      <div class="Black_button"> See <span class="studentFirstName"></span> work </div>
-                    </a>
-                  </section>
-                </div>
-      
-                <div class="student_card">
-                  <img id="mitu" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Mitu.jpg" alt="Mitu Thakkar's headshot">
-                  <div class="student_info">
-                    <p class="body">Social Media Team</p>
-                    <a href="./students/mituthakar/thakar.html" class="bodybold_med">Mitu Thakkar</a>
-                  </div>
-                </div>
-      
-                <div class="student_card">
-                  <img id="montana" onClick="studentAboutUpdate(this.id)" src="./img/studentHeadshots/Montana.jpg" alt="Montana Brandow's headshot">
-                  <div class="student_info">
-                    <p class="body">Social Media Team</p>
-                    <a href="./students/montanabrandow/brandow.html" class="bodybold_med">Montana Brandow</a>
-                  </div>
-                </div>
-      
-                <div id="about_4" class="student_about desktop">
-                  <section>
-                    <h1 class="studentName"></h1>
-                    <h4 class="studentSkills"></h4>
-                    <p class="bodybig, studentAbout">
-                    </p>
-                    <a class="studentLink" href="#" >
-                      <div class="Black_button"> See <span class="studentFirstName"></span> work </div>
-                    </a>
-                  </section>
-                </div>
-      
-              </div>
-            </section>
-          </section>
-          <footer>
-            <div id="presented">
-              <div class="bodysmall">presented by:</div>
-              <a href="https://cambriancollege.ca/"
-                ><img src="../../img/footer/CC_VERT_K1.png" alt=""
-              /></a>
-              <a href="http://ccgraphicdesign.ca/"
-                ><img src="../../img/footer/ccgd-logo1.png" alt=""
-              /></a>
-            </div>
-            <div id="supported">
-              <div class="bodysmall">supported by:</div>
-              <a href="https://www.sudburydesignsociety.com/"
-                ><img src="../../img/footer/SDS-Logo-K-21.png" alt=""
-              /></a>
-              <a href="https://www.rgd.ca/"
-                ><img src="../../img/footer/rgd-logo1.png" alt=""
-              /></a>
-            </div>
-            <div id="findus">
-              <div class="bodysmall">Find us on:</div>
-              <a href="https://www.facebook.com/cambriangraphicdesign" id="fb">
-                <img src="../../img/footer/facebook1.png" alt="" id="fb" /><span
-                  class="bodysmall"
-                  id="fbtext"
-                  >Facebook</span
-                >
-              </a>
-              <br />
-              <a href="https://www.instagram.com/ccgddoce/" id="ig">
-                <img src="../../img/footer/instagram1.png" alt="" id="ig" /><span
-                  class="bodysmall"
-                  id="igtext"
-                  >instagram</span
-                ></a
+        <div>
+          <!-- FIRST ROW -->
+
+          <div id="activeStudent" class="student_card">
+            <img
+              id="melanie"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Smelly.jpg"
+              alt="Melanie Gagne's head-shot"
+            />
+            <div class="student_info">
+              <p class="body">Creative Direction</p>
+              <a href="./students/melaniegagne/gagne.html" class="bodybold_med"
+                >Melanie Gagne</a
               >
             </div>
-          </footer>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="james"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/James.jpg"
+              alt="James Ross' head-shot"
+            />
+            <div class="student_info">
+              <p class="body">Web & Creative Direction</p>
+              <a href="./students/jamesross/ross.html" class="bodybold_med"
+                >James Ross</a
+              >
+            </div>
+          </div>
+
+          <div id="about_1_1" class="student_about tablet">
+            <section>
+              <h1 class="studentName"></h1>
+              <h4 class="studentSkills"></h4>
+              <p class="bodybig studentAbout"></p>
+              <a class="studentLink" href="#">
+                <div class="Black_button">
+                  See <span class="studentFirstName"></span> work
+                </div>
+              </a>
+            </section>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="jasmine"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Jasmine.jpg"
+              alt="Jasmine Paquette' head-shot"
+            />
+            <div class="student_info">
+              <p class="body">Creative Direction Team</p>
+              <a
+                href="./students/jasminepaquette/paquette.html"
+                class="bodybold_med"
+                >Jasmine Paquette</a
+              >
+            </div>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="matt"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Matt.jpg"
+              alt="Matt Bacon's head-shot"
+            />
+            <div class="student_info">
+              <p class="body">Web & Photography Team</p>
+              <a href="./students/matthewbacon/bacon.html" class="bodybold_med"
+                >Matthew Bacon</a
+              >
+            </div>
+          </div>
+
+          <div id="about_1" class="student_about desktop">
+            <section>
+              <h1 class="studentName"></h1>
+              <h4 class="studentSkills"></h4>
+              <p class="bodybig studentAbout"></p>
+              <a class="studentLink" href="#">
+                <div class="Black_button">
+                  See <span class="studentFirstName"></span> work
+                </div>
+              </a>
+            </section>
+          </div>
+
+          <!-- SECOND ROW -->
+          <div class="student_card">
+            <img
+              id="connor"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Connor.jpg"
+              alt="Connor Paradis' headshot"
+            />
+            <div class="student_info">
+              <p class="body">Photography Team</p>
+              <a
+                href="./students/connorparadis/paradis.html"
+                class="bodybold_med"
+                >Connor Paradis</a
+              >
+            </div>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="hunter"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Hunter.jpg"
+              alt="Hunter Maticiw's headshot"
+            />
+            <div class="student_info">
+              <p class="body">Photography Team</p>
+              <a
+                href="./students/huntermaticiw/maticiw.html"
+                class="bodybold_med"
+                >Hunter Maticiw</a
+              >
+            </div>
+          </div>
+
+          <div id="about_2_1" class="student_about tablet">
+            <section>
+              <h1 class="studentName"></h1>
+              <h4 class="studentSkills"></h4>
+              <p class="bodybig, studentAbout"></p>
+              <a class="studentLink" href="#">
+                <div class="Black_button">
+                  See <span class="studentFirstName"></span> work
+                </div>
+              </a>
+            </section>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="miranda"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Miranda.jpg"
+              alt="Miranda Jarvis' headshot"
+            />
+            <div class="student_info">
+              <p class="body">Photography Team</p>
+              <a
+                href="./students/mirandajarvis/jarvis.html"
+                class="bodybold_med"
+                >Miranda Jarvis</a
+              >
+            </div>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="alex"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Alex.jpg"
+              alt="Alexandre Venne's headshot"
+            />
+            <div class="student_info">
+              <p class="body">Copywriting Team</p>
+              <a
+                href="./students/alexandrevenne/venne.html"
+                class="bodybold_med"
+                >Alexandre Venne</a
+              >
+            </div>
+          </div>
+
+          <div id="about_2" class="student_about desktop">
+            <section>
+              <h1 class="studentName"></h1>
+              <h4 class="studentSkills"></h4>
+              <p class="bodybig, studentAbout"></p>
+              <a class="studentLink" href="#">
+                <div class="Black_button">
+                  See <span class="studentFirstName"></span> work
+                </div>
+              </a>
+            </section>
+          </div>
+
+          <!-- THIRD ROW -->
+          <div class="student_card">
+            <img
+              id="jasmineM"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Jasmine_M.jpg"
+              alt="Jasmine Morin's headshot"
+            />
+            <div class="student_info">
+              <p class="body">Copywriting Team</p>
+              <a href="./students/jasminemorin/morin.html" class="bodybold_med"
+                >Jasmine Morin</a
+              >
+            </div>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="kasey"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Kasey.jpg"
+              alt="Kasey Pulvermacher's headshot"
+            />
+            <div class="student_info">
+              <p class="body">Copywriting Team</p>
+              <a
+                href="./students/kaseypulvermacher/pulvermacher.html"
+                class="bodybold_med"
+                >Kasey Pulvermacher</a
+              >
+            </div>
+          </div>
+
+          <div id="about_3_1" class="student_about tablet">
+            <section>
+              <h1 class="studentName"></h1>
+              <h4 class="studentSkills"></h4>
+              <p class="bodybig, studentAbout"></p>
+              <a class="studentLink" href="#">
+                <div class="Black_button">
+                  See <span class="studentFirstName"></span> work
+                </div>
+              </a>
+            </section>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="madison"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Madison.jpg"
+              alt="Madison Lemieux's headshot"
+            />
+            <div class="student_info">
+              <p class="body">Copywriting Team</p>
+              <a
+                href="./students/madisonlemieux/lemieux.html"
+                class="bodybold_med"
+                >Madison Lemieux</a
+              >
+            </div>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="abbie"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Abbie.jpg"
+              alt="Abbie Trottier's headshot"
+            />
+            <div class="student_info">
+              <p class="body">Social Media Team</p>
+              <a
+                href="./students/abbietrottier/trottier.html"
+                class="bodybold_med"
+                >Abbie Trottier</a
+              >
+            </div>
+          </div>
+
+          <div id="about_3" class="student_about desktop">
+            <section>
+              <h1 class="studentName"></h1>
+              <h4 class="studentSkills"></h4>
+              <p class="bodybig, studentAbout"></p>
+              <a class="studentLink" href="#">
+                <div class="Black_button">
+                  See <span class="studentFirstName"></span> work
+                </div>
+              </a>
+            </section>
+          </div>
+
+          <!-- FOURTH ROW -->
+          <div class="student_card">
+            <img
+              id="emily"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Emily.jpg"
+              alt="Emily Anderson's headshot"
+            />
+            <div class="student_info">
+              <p class="body">Social Media Team</p>
+              <a
+                href="./students/emilyanderson/anderson.html"
+                class="bodybold_med"
+                >Emily Anderson</a
+              >
+            </div>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="heather"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Heather.jpg"
+              alt="Heather Lashuk's headshot"
+            />
+            <div class="student_info">
+              <p class="body">Social Media Team</p>
+              <a
+                href="./students/heatherlashuk/lashuk.html"
+                class="bodybold_med"
+                >Heather Lashuk</a
+              >
+            </div>
+          </div>
+
+          <div id="about_4_1" class="student_about tablet">
+            <section>
+              <h1 class="studentName"></h1>
+              <h4 class="studentSkills"></h4>
+              <p class="bodybig, studentAbout"></p>
+              <a class="studentLink" href="#">
+                <div class="Black_button">
+                  See <span class="studentFirstName"></span> work
+                </div>
+              </a>
+            </section>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="mitu"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Mitu.jpg"
+              alt="Mitu Thakkar's headshot"
+            />
+            <div class="student_info">
+              <p class="body">Social Media Team</p>
+              <a href="./students/mituthakar/thakar.html" class="bodybold_med"
+                >Mitu Thakkar</a
+              >
+            </div>
+          </div>
+
+          <div class="student_card">
+            <img
+              id="montana"
+              onClick="studentAboutUpdate(this.id)"
+              src="./img/studentHeadshots/Montana.jpg"
+              alt="Montana Brandow's headshot"
+            />
+            <div class="student_info">
+              <p class="body">Social Media Team</p>
+              <a
+                href="./students/montanabrandow/brandow.html"
+                class="bodybold_med"
+                >Montana Brandow</a
+              >
+            </div>
+          </div>
+
+          <div id="about_4" class="student_about desktop">
+            <section>
+              <h1 class="studentName"></h1>
+              <h4 class="studentSkills"></h4>
+              <p class="bodybig, studentAbout"></p>
+              <a class="studentLink" href="#">
+                <div class="Black_button">
+                  See <span class="studentFirstName"></span> work
+                </div>
+              </a>
+            </section>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div id="presented">
+        <div class="bodysmall">presented by:</div>
+        <a href="https://cambriancollege.ca/"
+          ><img src="../../img/footer/CC_VERT_K1.png" alt=""
+        /></a>
+        <a href="http://ccgraphicdesign.ca/"
+          ><img src="../../img/footer/ccgd-logo1.png" alt=""
+        /></a>
+      </div>
+      <div id="supported">
+        <div class="bodysmall">supported by:</div>
+        <a href="https://www.sudburydesignsociety.com/"
+          ><img src="../../img/footer/SDS-Logo-K-21.png" alt=""
+        /></a>
+        <a href="https://www.rgd.ca/"
+          ><img src="../../img/footer/rgd-logo1.png" alt=""
+        /></a>
+      </div>
+      <div id="findus">
+        <div class="bodysmall">Find us on:</div>
+        <a href="https://www.facebook.com/cambriangraphicdesign" id="fb">
+          <img src="../../img/footer/facebook1.png" alt="" id="fb" /><span
+            class="bodysmall"
+            id="fbtext"
+            >Facebook</span
+          >
+        </a>
+        <br />
+        <a href="https://www.instagram.com/ccgddoce/" id="ig">
+          <img src="../../img/footer/instagram1.png" alt="" id="ig" /><span
+            class="bodysmall"
+            id="igtext"
+            >instagram</span
+          ></a
+        >
+      </div>
+    </footer>
   </body>
   <script src="./Scripts/main.js"></script>
 </html>
