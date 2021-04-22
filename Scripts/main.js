@@ -139,7 +139,7 @@ let activeStudent = clicked_id.parentElement;
        
         studentName = 'James Ross'
         studentSkills = 'Web Development • UI/UX • Packaging • Motion Graphics';
-        studentAbout = 'James needs to finish this';
+        studentAbout = 'James has pursued a multi-disciplinary approach to his education by learning graphic design at Cambrian College while pursing teaching himself development and UI/UX while working as a web developer/designer in Sudbury for 3 years. ';
         studentLink = './students/jamesross/ross.html';
         studentFirstName = studentName.split(' ') [0] + '\'';
 
@@ -166,7 +166,7 @@ let activeStudent = clicked_id.parentElement;
     } else if ( clicked_id.id === 'matt') {
         studentName = 'Matthew Bacon'
         studentSkills = 'Web Development • UI/UX • Motion Graphics';
-        studentAbout = 'Matt needs to finish this';
+        studentAbout = 'Matthew likes to direct his design efforts towards web design with a second passion for videography. He excels at minimalism and gets the most across by using the least amount of content needed to avoid bombarding the viewer. He\'d like to pursue web design after graduation as a freelancer as he continues to develop his knowledge in UI/UX and expanding his list of languages.';
         studentLink = './students/matthewbacon/bacon.html';
         studentFirstName = studentName.split(' ') [0] + '\'s';
         
