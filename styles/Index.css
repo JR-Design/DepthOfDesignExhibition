@@ -218,7 +218,11 @@ body {
   text-align: left;
   display: inline-block;
 }
-.student_card::before {
+
+.student_card:not(#activeStudent) {
+    opacity: 70%;
+}
+#activeStudent::before {
     background-color: #495bfdb4;
     content:'';
     z-index: 1;
@@ -228,10 +232,11 @@ body {
     margin: 0 auto;
     height: 24.3vw;
     mix-blend-mode: lighten;
-    display: block;
     width: 19.5vw;
-    display:none;
+    pointer-events: none;
 }
+
+
 
 .student_card img {
   width: 100%;
@@ -500,11 +505,11 @@ body {
     display: inline-block;
   }
 
-  .student_card::before {
+  #activeStudent::before {
     height: 50vw;
     width: 40vw;
-    display:none;
 }
+
 
   .student_info p,
   .student_info a {
@@ -565,11 +570,10 @@ body {
   .student_card {
     width: 39vw;
   }
-  .student_card::before {
+  #activeStudent::before {
     height: 48.7vw;
     width: 39vw;
-    display: block;
-}
+  }
   .section4_2 ul li {
     padding: 0.75em 0.5em 0.75em 0.25em;
   }
