@@ -1,0 +1,43 @@
+#studentsland {
+  background-color: var(--light_grey);
+  padding-top: 50vh;
+  padding-bottom: 20vh;
+  padding-right: 10vw;
+  padding-left: 5vw;
+  width: 100vw;
+  margin-bottom: 10vh;
+}
+#studentsland h1,
+#studentsland p {
+  width: 50vw;
+}
+@media only screen and (max-width: 840px) {
+  #studentsland {
+    background-color: var(--light_grey);
+    padding-top: 30vh;
+    padding-bottom: 20vh;
+    padding-left: 5vw;
+    width: 90%;
+    margin-bottom: 10vh;
+  }
+  #studentsland h1,
+  #studentsland p {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #studentsland {
+    background-color: var(--light_grey);
+    padding-top: 30vh;
+    padding-bottom: 20vh;
+    padding-right: 10vw;
+    padding-left: 5vw;
+    width: 100vw;
+    margin-bottom: 10vh;
+  }
+  #studentsland h1,
+  #studentsland p {
+    width: 80vw;
+  }
+}
