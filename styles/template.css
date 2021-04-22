@@ -27,6 +27,7 @@
 #landingsocial a {
   text-decoration: none;
 }
+
 #showcase {
   margin-top: -50px;
   backdrop-filter: blur(10px);
@@ -293,15 +294,42 @@ li span {
   }
   .projecttitle .body,
   .projecttitle .bigsubtitle {
-    width: 80%;
+    width: 100%;
   }
   .projecttitle {
-    margin: 50px 90px 80px;
+    margin: 50px 45px 80px;
+  }
+  .wrapper {
+    max-width: 1440px;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  #w1_fullwidth_1 {
+    max-height: 100vh;
+
+    margin-top: 150px;
+    margin-bottom: 50px;
   }
 }
 /* Mobile */
 @media only screen and (max-width: 560px) {
   #landingbio {
     margin-left: max(20px, 2%);
+    padding-top: 15vh;
+    width: 55%;
+    /* background-color: var(--white);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
+  }
+  #landingsocial span {
+    margin: 25px 10px 0px 0px;
+  }
+  #landingsocial {
+    margin-bottom: 25px;
+  }
+  #showcase {
+    margin-top: 0px;
+    backdrop-filter: blur(10px);
+    width: 100%;
   }
 }

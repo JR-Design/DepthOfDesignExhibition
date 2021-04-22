@@ -2,7 +2,7 @@
   width: 100vw;
   min-height: 80vh;
   max-height: 100vh;
-  background-position: right;
+  background-position: center;
   background-color: aqua;
   background-image: url("portrait.jpg");
   background-size: cover;
