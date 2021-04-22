@@ -39,7 +39,8 @@ function pageDepth() {
 
 function studentAboutUpdate(clicked_id) {
 
-    
+
+
 
 //This reset's the elements on resize 
 window.onresize = function() {
@@ -51,6 +52,7 @@ window.onresize = function() {
     section3.style.display = "none";
     section4_1.style.display = "none";
     section4.style.display = "none";
+    activeStudentSection.removeAttribute('id');
 }
 
 function resetStudentAbout() {
@@ -62,7 +64,10 @@ function resetStudentAbout() {
     section3.style.display = "none";
     section4_1.style.display = "none";
     section4.style.display = "none";
+
+
 }
+
 
 ///////DEFAULTS
 let windowWidth = window.innerWidth;
@@ -76,6 +81,9 @@ let section3_1 = document.getElementById('about_3_1');
 let section3 = document.getElementById('about_3');
 let section4_1 = document.getElementById('about_4_1');
 let section4 = document.getElementById('about_4');
+let activeStudentSection = document.getElementById('activeStudent');
+var items = document.querySelectorAll('.student_card:not(#activeStudent)');
+
 
 //Name Defaults
 let studentName = 'You broke the code';
@@ -83,19 +91,22 @@ let studentSkills = 'Sorry I don\'t mean to blame the end user';
 let studentAbout = 'Please contact James and let him know';
 let studentLink = 'easyAs123.abc/meAndYouGirl';
 let studentFirstName = studentName.split(' ') [0] + '\'s';
+let activeStudent = clicked_id.parentElement;
 
 
 //Due to time restraints + readability concerns I'm gonna leave this as a large if Else statement
 //Basically it updates the area 
-    if (clicked_id === 'melanie') {
+    if (clicked_id.id === 'melanie') {
         studentName = 'Melanie Gagne';
         studentSkills = 'Branding • Visual Identity • Packaging • Web Design';
         studentAbout = 'Melanie is an interdisciplinary creative who is constantly exploring new mediums, both tangible and digital. As a designer, she heavily focuses on the research and exploration portion of any project, emphasizing meaning and creating more profound values for every design.';
         studentLink = './students/melaniegagne/gagne.html';
         studentFirstName = studentName.split(' ') [0] + '\'s';
 
+
         resetStudentAbout();
 
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         if (windowWidth <= 860){
             section1_1.style.display = "block"
         } else if (windowWidth > 860){
@@ -103,13 +114,18 @@ let studentFirstName = studentName.split(' ') [0] + '\'s';
         }
 
 
-    } else if ( clicked_id === 'james') {
+    } else if ( clicked_id.id === 'james') {
+       
+        activeStudent = activeStudent.setAttribute("id", "activeStudent");
         studentName = 'James Ross'
         studentSkills = 'Web Development • UI/UX • Packaging • Motion Graphics';
         studentAbout = 'James needs to finish this';
         studentLink = './students/jamesross/ross.html';
         studentFirstName = studentName.split(' ') [0] + '\'';
 
+        
+
+        
         resetStudentAbout();
         if (windowWidth <= 860){
             section1_1.style.display = "block";
@@ -309,6 +325,11 @@ for(let i = 0; i < studentFirstNameArea.length; i++) {
     studentFirstNameArea[i].innerHTML = studentFirstName;
 }
 
+var items = document.querySelectorAll('.student_card:not(#activeStudent)');
+for(let i = 0; i < items.length; i++) {
+    items[i].style.opacity = '70%';
+}
+
 }
 
 
@@ -321,7 +342,6 @@ var projectElement = document.getElementById("ProjectElement");
 
 
 function hover(element) {
-    console.log(element);
     if (element === 'abbie_project') {
     projectElement.setAttribute('src', './img/featuredProject/Abbie.png');
     } else if (element === 'alex_project') {
