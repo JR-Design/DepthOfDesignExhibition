@@ -25,3 +25,9 @@ a div#skip {
   background-color: var(--primary);
   color: #fff;
 }
+#studentsland {
+  margin-top: 40vh;
+  margin-bottom: 30vh;
+  margin-right: 25vw;
+  width: 50vw;
+}
