@@ -4,7 +4,7 @@
   font-weight: medium;
   font-size: 1.5rem;
   line-height: 72px;
-  letter-spacing: 0.154102REM;
+  letter-spacing: 0.154102rem;
   text-transform: uppercase;
   color: #252529;
   margin-left: 80px;
@@ -17,6 +17,9 @@ nav a {
 nav a:hover .navtext {
   color: var(--primary);
   transition: 0.2s;
+}
+nav a:active .navtext {
+  color: var(--primary);
 }
 nav {
   position: sticky;
