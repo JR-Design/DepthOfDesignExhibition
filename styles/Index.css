@@ -220,7 +220,7 @@ body {
 }
 
 .student_card:not(#activeStudent) {
-    opacity: 70%;
+    opacity: 100%;
 }
 #activeStudent::before {
     background-color: #495bfdb4;
