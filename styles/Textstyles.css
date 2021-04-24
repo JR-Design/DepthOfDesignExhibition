@@ -164,8 +164,8 @@ h4 {
 }
 .bodybig {
   font-family: Gothambook, sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  /* font-style: normal; */
+  /* font-weight: normal; */
   font-size: 18px;
   line-height: 150%;
   /* or 27px */
