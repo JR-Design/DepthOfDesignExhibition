@@ -11,7 +11,7 @@
 .projectsc {
   display: grid;
   width: 20vw;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 /* .projectsc:nth-last-child(1) {
   grid-column: 1 / span 3;
@@ -20,6 +20,7 @@
 .projectsc img {
   max-width: 100%;
   max-height: 100%;
+  vertical-align: top;
 }
 
 .projectsc p.body {
@@ -28,8 +29,11 @@
 @media only screen and (max-width: 840px) {
   .projectsp {
     grid-template-columns: auto auto;
+    align-items: unset;
   }
   .projectsc {
     width: 40vw;
+    /* vertical-align: top; */
+    vertical-align: top;
   }
 }
