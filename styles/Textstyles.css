@@ -181,13 +181,11 @@ h4 {
   color: #000000;
 }
 .bodybold {
-  font-family: Gothambold, sans-serif;
+  font-family: Gothammedium, sans-serif;
   font-style: normal;
-
   font-size: 16px;
   line-height: 150%;
   /* or 24px */
-
   color: #000000;
 }
 .bodybold_med {

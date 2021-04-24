@@ -30,6 +30,6 @@
     grid-template-columns: auto auto;
   }
   .projectsc {
-    max-width: 40vw;
+    width: 40vw;
   }
 }
